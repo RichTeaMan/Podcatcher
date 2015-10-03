@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Podcatcher.Load", "Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Podcatcher.Interfaces", "Podcatcher.Interfaces\Podcatcher.Interfaces.csproj", "{39F5073D-3515-46A9-954D-70FD69564BD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Podcatcher.ChunkedDownloader", "Podcatcher.ChunkedDownloader\Podcatcher.ChunkedDownloader.csproj", "{0A191063-F152-4A6C-AA95-D725C9D1C754}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,18 @@ Global
 		{39F5073D-3515-46A9-954D-70FD69564BD9}.Release|ARM.Build.0 = Release|Any CPU
 		{39F5073D-3515-46A9-954D-70FD69564BD9}.Release|x86.ActiveCfg = Release|Any CPU
 		{39F5073D-3515-46A9-954D-70FD69564BD9}.Release|x86.Build.0 = Release|Any CPU
+		{0A191063-F152-4A6C-AA95-D725C9D1C754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A191063-F152-4A6C-AA95-D725C9D1C754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A191063-F152-4A6C-AA95-D725C9D1C754}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{0A191063-F152-4A6C-AA95-D725C9D1C754}.Debug|ARM.Build.0 = Debug|Any CPU
+		{0A191063-F152-4A6C-AA95-D725C9D1C754}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0A191063-F152-4A6C-AA95-D725C9D1C754}.Debug|x86.Build.0 = Debug|Any CPU
+		{0A191063-F152-4A6C-AA95-D725C9D1C754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A191063-F152-4A6C-AA95-D725C9D1C754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A191063-F152-4A6C-AA95-D725C9D1C754}.Release|ARM.ActiveCfg = Release|Any CPU
+		{0A191063-F152-4A6C-AA95-D725C9D1C754}.Release|ARM.Build.0 = Release|Any CPU
+		{0A191063-F152-4A6C-AA95-D725C9D1C754}.Release|x86.ActiveCfg = Release|Any CPU
+		{0A191063-F152-4A6C-AA95-D725C9D1C754}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

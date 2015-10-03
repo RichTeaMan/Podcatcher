@@ -37,6 +37,10 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions.cs" />
+    <Compile Include="IChunk.cs" />
+    <Compile Include="IChunkData.cs" />
+    <Compile Include="IChunkStore.cs" />
     <Compile Include="IRssDocument.cs" />
     <Compile Include="IRssItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
