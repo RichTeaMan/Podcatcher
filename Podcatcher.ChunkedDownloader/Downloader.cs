@@ -25,9 +25,10 @@ namespace Podcatcher.ChunkedDownloader
             DownloadUrl = downloadUrl;
         }
 
-        protected IChunkData SelectChunk()
+        protected async Task<IChunkData> SelectChunk()
         {
-            var chunks = ChunkStore.GetChunkDatas().OrderBy(c => c.Start);
+            var storechunks = await ChunkStore.GetChunkDatas();
+            var chunks = storechunks.OrderBy(c => c.Start);
             if (chunks.Count() == 0)
             {
                 return new ChunkData() { Start = 0, Length = DefaultLength };
@@ -68,6 +69,11 @@ namespace Podcatcher.ChunkedDownloader
             }
         }
 
+        protected async Task StoreChunk(IChunk chunk)
+        {
+            await ChunkStore.StoreChunk(chunk.Start, chunk.Data.ToArray());
+        }
+
         protected async Task<IChunk> DownloadChunk(IChunkData chunkData)
         {
             using (var message = new HttpRequestMessage(HttpMethod.Get, DownloadUrl))
@@ -86,6 +92,12 @@ namespace Podcatcher.ChunkedDownloader
                     return chunk;
                 }
             }
+        }
+
+        public async Task DownloadChunk()
+        {
+            var chunkData = await SelectChunk();
+            var chunk = await DownloadChunk(chunkData);
         }
 
 
