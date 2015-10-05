@@ -4,102 +4,72 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Text;
 using System.Threading.Tasks;
+using System.Text;
 
 namespace Podcatcher.ChunkedDownloader
 {
     public class Downloader
     {
-        public IChunkStore ChunkStore { get; private set; }
+        public IChunkStore DestinationStore { get; private set; }
 
-        public string DownloadUrl { get; private set; }
+		public IReadonlyDataStore SourceDataStore{ get; private set; }
 
         public ushort DefaultLength { get; set; } = 500;
 
+		public bool TransferComplete { get; private set; } = false;
+
         protected Downloader() { }
 
-        public Downloader(IChunkStore chunkStore, string downloadUrl)
+		public Downloader(IChunkStore destinationDataStore, IReadonlyDataStore sourceDataStore)
         {
-            ChunkStore = chunkStore;
-            DownloadUrl = downloadUrl;
+            DestinationStore = destinationDataStore;
+			SourceDataStore = sourceDataStore;
         }
 
-        protected async Task<IChunkData> SelectChunk()
-        {
-            var storechunks = await ChunkStore.GetChunkDatas();
-            var chunks = storechunks.OrderBy(c => c.Start);
-            if (chunks.Count() == 0)
-            {
-                return new ChunkData() { Start = 0, Length = DefaultLength };
-            }
-            
-            uint length = DefaultLength;
-            IChunkData lastChunk = chunks.First();
+		/// <summary>
+		/// Gets the next empty chunk. This chunk should be retrieved from the source
+		/// data. If null is returned there are no more empty chunks and the transfer should
+		/// be considered complete.
+		/// 
+		/// This method should be checked for exceptions.
+		/// </summary>
+		/// <returns>The next empty chunk.</returns>
+        protected async Task<IChunkData> GetNextEmptyChunk()
+		{
+			var emptyChunk = await DestinationStore.GetNextEmptyChunk ();
+			uint length = Math.Min (emptyChunk.Length, DefaultLength);
 
-            foreach (var c in chunks.Skip(1))
-            {
-                // chunks should start and end on the same byte
-                if (lastChunk.End() < c.Start)
-                {
-                    uint l = Math.Min(length, c.Start - lastChunk.End());
-                    return new ChunkData()
-                    {
-                        Start = lastChunk.Start + lastChunk.Length + 1,
-                        Length = l
-                    };
-                }
-                else
-                {
-                    lastChunk = c;
-                }
-            }
-
-            if(lastChunk == null)
-            {
-                throw new Exception("No chunks found.");
-            }
-            else
-            {
-                return new ChunkData()
-                {
-                    Start = lastChunk.End(),
-                    Length = length
-                };
-            }
-        }
+			var chunkData = new ChunkData () { 
+				Start = emptyChunk.Start,
+				Length = length
+			};
+			return chunkData;
+		}
 
         protected async Task StoreChunk(IChunk chunk)
         {
-            await ChunkStore.StoreChunk(chunk.Start, chunk.Data.ToArray());
-        }
-
-        protected async Task<IChunk> DownloadChunk(IChunkData chunkData)
-        {
-            using (var message = new HttpRequestMessage(HttpMethod.Get, DownloadUrl))
-            using (var wc = new HttpClient())
-            {
-                message.Headers.Range = new RangeHeaderValue(chunkData.Start, chunkData.Start + chunkData.Length);
-                using (var response = await wc.SendAsync(message))
-                {
-                    var content = await response.Content.ReadAsByteArrayAsync();
-                    var chunk = new Chunk()
-                    {
-                        Start = chunkData.Start,
-                        Length = (uint)content.Length,
-                        Data = content
-                    };
-                    return chunk;
-                }
-            }
+            await DestinationStore.StoreChunk(chunk.Start, chunk.Data.ToArray());
         }
 
         public async Task DownloadChunk()
         {
-            var chunkData = await SelectChunk();
-            var chunk = await DownloadChunk(chunkData);
+			try
+			{
+	            var chunkData = await GetNextEmptyChunk();
+				if (chunkData == null) {
+					// consider more robust way of checking this.
+					TransferComplete = true;
+				}
+				else {
+					var chunk = await SourceDataStore.GetChunk (chunkData);
+				}
+			}
+			catch(Exception ex) {
+				// do nothing for now. consider logging and/or aborting after x attempts.
+				return;
+			}
         }
-
 
     }
 }
