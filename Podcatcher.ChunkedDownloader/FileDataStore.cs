@@ -155,7 +155,7 @@ namespace Podcatcher.ChunkedDownloader
 			}
 		}
 
-		public async Task<IChunkData> StoreChunk(uint start, byte[] data)
+		public async Task StoreChunk(uint start, byte[] data)
 		{
 			var file = await GetFile ();
 			using (var stream = await file.OpenAsync(FileAccess.ReadAndWrite)) {

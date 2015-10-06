@@ -8,7 +8,7 @@ namespace Podcatcher.Interfaces
 {
 	public interface IChunkStore : IReadOnlyDataStore
     {
-		Task<IChunkData> StoreChunk(uint start, byte[] data);
+		Task StoreChunk(uint start, byte[] data);
 		IEnumerable<IChunkData> GetNextEmptyChunk();
     }
 }
