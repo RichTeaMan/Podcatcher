@@ -40,7 +40,7 @@ namespace Podcatcher.ChunkedDownloader
 			}
 		}
 
-		public Task<bool> IsChunkable()
+		public async Task<bool> IsChunkable()
 		{
 			// do this better
 			return true;
@@ -54,13 +54,7 @@ namespace Podcatcher.ChunkedDownloader
 				using (var response = await wc.SendAsync(message))
 				{
 					var content = await response.Content.ReadAsByteArrayAsync();
-					var chunk = new Chunk()
-					{
-						Start = chunkData.Start,
-						Length = (uint)content.Length,
-						Data = content
-					};
-					return chunk;
+					return content;
 				}
 			}
 		}
