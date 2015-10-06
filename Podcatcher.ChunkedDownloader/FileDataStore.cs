@@ -56,9 +56,34 @@ namespace Podcatcher.ChunkedDownloader
 			}
 		}
 
+        /// <summary>
+        /// Gets data for the given chunk. Returns null if no data exists.
+        /// </summary>
+        /// <param name="chunkData"></param>
+        /// <returns></returns>
 		public async Task<IChunk> GetChunk(IChunkData chunkData)
 		{
-			throw new NotImplementedException();
+            var file = await GetFile();
+            using (var stream = await file.OpenAsync(FileAccess.Read))
+            {
+                if(chunkData.Start > stream.Length)
+                {
+                    return null;
+                }
+                else
+                {
+                    byte[] buffer = new byte[chunkData.Length];
+                    stream.Position = chunkData.Start;
+
+                    int read = await stream.ReadAsync(buffer, 0, (int)chunkData.Length);
+                    if(read != chunkData.Length)
+                    {
+                        buffer = buffer.Take(read).ToArray();
+                    }
+                    var chunk = new Chunk() { Start = chunkData.Start, Length = (uint)read, Data = buffer };
+                    return chunk;
+                }
+            }
 		}
 
 		public IEnumerable<IChunkData> GetNextEmptyChunk()
@@ -175,12 +200,24 @@ namespace Podcatcher.ChunkedDownloader
 
 		public async Task<bool> IsChunkable()
 		{
-			return true;
+            // shuts up warning.
+            var result = await Task.Factory.StartNew(() => { return true; });
+            return result;
 		}
 
 		public async Task<byte[]> GetData()
 		{
-			throw new NotImplementedException ();
+            var file = await GetFile();
+            using (var stream = await file.OpenAsync(FileAccess.Read))
+            {
+                var buffer = new byte[stream.Length];
+                int read = await stream.ReadAsync(buffer, 0, buffer.Length);
+                if(read != buffer.Length)
+                {
+                    throw new Exception("Incorrect data length.");
+                }
+                return buffer;
+            }
 		}
 
 		protected async Task WriteUnusedFlag(Stream stream)
