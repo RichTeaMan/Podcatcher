@@ -20,7 +20,7 @@ namespace Podcatcher.ChunkedDownloader
 			Url = url;
 		}
 
-		protected async Task<IChunk> DownloadChunk(IChunkData chunkData)
+		public async Task<IChunk> GetChunk(IChunkData chunkData)
 		{
 			using (var message = new HttpRequestMessage(HttpMethod.Get, Url))
 			using (var wc = new HttpClient())
