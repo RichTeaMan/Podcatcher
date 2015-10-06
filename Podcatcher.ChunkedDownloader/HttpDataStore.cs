@@ -22,7 +22,7 @@ namespace Podcatcher.ChunkedDownloader
 
 		protected async Task<IChunk> DownloadChunk(IChunkData chunkData)
 		{
-			using (var message = new HttpRequestMessage(HttpMethod.Get, DownloadUrl))
+			using (var message = new HttpRequestMessage(HttpMethod.Get, Url))
 			using (var wc = new HttpClient())
 			{
 				message.Headers.Range = new RangeHeaderValue(chunkData.Start, chunkData.Start + chunkData.Length);
@@ -48,7 +48,7 @@ namespace Podcatcher.ChunkedDownloader
 
 		public async Task<byte[]> GetData()
 		{
-			using (var message = new HttpRequestMessage(HttpMethod.Get, DownloadUrl))
+			using (var message = new HttpRequestMessage(HttpMethod.Get, Url))
 			using (var wc = new HttpClient())
 			{
 				using (var response = await wc.SendAsync(message))
