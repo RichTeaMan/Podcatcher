@@ -61,6 +61,26 @@ namespace Podcatcher.ChunkedDownloader
 				}
 			}
 		}
-	}
+
+        public async Task<uint> DataLength()
+        {
+            using (var message = new HttpRequestMessage(HttpMethod.Head, Url))
+            using (var wc = new HttpClient())
+            using (var response = await wc.SendAsync(message))
+            {
+                IEnumerable<string> values;
+                if(response.Headers.TryGetValues("Content-Length", out values))
+                {
+                    var value = values.FirstOrDefault();
+                    uint result;
+                    if(uint.TryParse(value, out result))
+                    {
+                        return result;
+                    }
+                }
+                return 0;
+            }
+        }
+    }
 }
 

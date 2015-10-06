@@ -232,6 +232,14 @@ namespace Podcatcher.ChunkedDownloader
 			await stream.WriteAsync (UnusedFlag, 0, UnusedFlag.Length);
 		}
 
-	}
+        public async Task<uint> DataLength()
+        {
+            var file = await GetFile();
+            using (var stream = await file.OpenAsync(FileAccess.Read))
+            {
+                return (uint)stream.Length;
+            }
+        }
+    }
 }
 

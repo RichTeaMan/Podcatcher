@@ -25,5 +25,7 @@ namespace Podcatcher.Interfaces
 		/// </summary>
 		/// <returns>The data.</returns>
         Task<byte[]> GetData();
+
+        Task<uint> DataLength();
     }
 }
