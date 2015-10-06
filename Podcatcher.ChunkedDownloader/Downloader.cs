@@ -35,7 +35,7 @@ namespace Podcatcher.ChunkedDownloader
 		/// This method should be checked for exceptions.
 		/// </summary>
 		/// <returns>The next empty chunk.</returns>
-        protected async Task<IChunkData> GetNextEmptyChunk()
+        protected IChunkData GetNextEmptyChunk()
 		{
 			var emptyChunks = DestinationStore.GetNextEmptyChunk();
 			var emptyChunk = emptyChunks.FirstOrDefault();
@@ -60,16 +60,17 @@ namespace Podcatcher.ChunkedDownloader
         {
 			try
 			{
-	            var chunkData = await GetNextEmptyChunk();
+	            var chunkData = GetNextEmptyChunk();
 				if (chunkData == null) {
 					// consider more robust way of checking this.
 					TransferComplete = true;
 				}
 				else {
-					var chunk = await SourceDataStore.GetChunk (chunkData);
+					var chunk = await SourceDataStore.GetChunk(chunkData);
+					await DestinationStore.StoreChunk(chunk.Start, chunk.Data.ToArray());
 				}
 			}
-			catch(Exception ex) {
+			catch(Exception) {
 				// do nothing for now. consider logging and/or aborting after x attempts.
 				return;
 			}

@@ -51,7 +51,7 @@ namespace Podcatcher.ChunkedDownloader
 			if (file == null) {
 				await FS.LocalStorage.CreateFileAsync(FilePath, CreationCollisionOption.OpenIfExists);
 				using (var stream = await file.OpenAsync(FileAccess.ReadAndWrite)) {
-					WriteUnusedFlag(stream);
+					await WriteUnusedFlag(stream);
 				}
 			}
 		}
@@ -88,6 +88,7 @@ namespace Podcatcher.ChunkedDownloader
 				Start = previousIndex,
 				Length = uint.MaxValue
 			};
+			yield return finalChunk;
 		}
 
 		protected IEnumerable<uint> GetNextUnusedIndex(int startPosition)

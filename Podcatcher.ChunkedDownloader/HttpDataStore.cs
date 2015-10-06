@@ -43,7 +43,10 @@ namespace Podcatcher.ChunkedDownloader
 		public async Task<bool> IsChunkable()
 		{
 			// do this better
-			return true;
+
+			// lambda shuts the warning up
+			var result = await Task.Factory.StartNew(() => { return true; });
+			return result;
 		}
 
 		public async Task<byte[]> GetData()
