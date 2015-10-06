@@ -94,9 +94,9 @@ namespace Podcatcher.ChunkedDownloader
 			}
 		}
 
-		public IEnumerable<IChunkData> GetNextEmptyChunk(int startPosition)
+		public IEnumerable<IChunkData> GetNextEmptyChunk(uint startPosition)
 		{
-			var indexs = GetNextUnusedIndex(startPosition);
+			var indexs = GetNextUnusedIndex((int)startPosition);
 			if (indexs.Count() == 0) {
 				yield break;
 			}
@@ -188,7 +188,14 @@ namespace Podcatcher.ChunkedDownloader
 				if (stream.CanSeek && stream.CanWrite) {
 					
 					stream.Position = start;
-					await stream.WriteAsync (data, 0, data.Length);
+                    // only write unused flag at end of stream if there is something tailing and data does not immediately follow.
+                    var nextEmpty = GetNextEmptyChunk(start).FirstOrDefault();
+                    bool writeUnused = nextEmpty != null && nextEmpty.End() != start + data.Length;
+					await stream.WriteAsync(data, 0, data.Length);
+                    if (writeUnused)
+                    {
+                        await WriteUnusedFlag(stream);
+                    }
 
 				} else {
 					throw new Exception ("File cannot be written too, it does not support seeking and/or writing.");
