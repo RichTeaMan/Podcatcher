@@ -37,7 +37,7 @@ namespace Podcatcher.ChunkedDownloader
 		/// <returns>The next empty chunk.</returns>
         protected async Task<IChunkData> GetNextEmptyChunk()
 		{
-			var emptyChunks = await DestinationStore.GetNextEmptyChunk();
+			var emptyChunks = DestinationStore.GetNextEmptyChunk();
 			var emptyChunk = emptyChunks.FirstOrDefault();
 			if (emptyChunk == null) {
 				return null;

@@ -12,7 +12,7 @@ namespace Podcatcher.ChunkedDownloader
 {
 	public class FileDataStore : IChunkStore
 	{
-		protected static byte[] UnusedFlag = { 'D', 'E', 'D' };
+		protected static byte[] UnusedFlag = { 1, 2, 4, 8, 16, 32 };
 		protected const int BufferLength = 1024;
 
 		/// <summary>
@@ -49,8 +49,8 @@ namespace Podcatcher.ChunkedDownloader
 		{
 			var file = await GetFile();
 			if (file == null) {
-				await FS.LocalStorage.CreateFileAsync(FilePath);
-				using (var stream = await file.OpenAsync()) {
+				await FS.LocalStorage.CreateFileAsync(FilePath, CreationCollisionOption.OpenIfExists);
+				using (var stream = await file.OpenAsync(FileAccess.ReadAndWrite)) {
 					WriteUnusedFlag(stream);
 				}
 			}
@@ -61,19 +61,19 @@ namespace Podcatcher.ChunkedDownloader
 			throw new NotImplementedException();
 		}
 
-		public async Task<IEnumerable<IChunkData>> GetNextEmptyChunk()
+		public IEnumerable<IChunkData> GetNextEmptyChunk()
 		{
-			var chunks = await GetNextEmptyChunk(0);
+			var chunks = GetNextEmptyChunk(0);
 			foreach (var chunk in chunks) {
 				yield return chunk;
 			}
 		}
 
-		public async Task<IEnumerable<IChunkData>> GetNextEmptyChunk(int startPosition)
+		public IEnumerable<IChunkData> GetNextEmptyChunk(int startPosition)
 		{
-			var indexs = await GetNextUnusedIndex (startPosition);
+			var indexs = GetNextUnusedIndex(startPosition);
 			if (indexs.Count() == 0) {
-				return;
+				yield break;
 			}
 			uint previousIndex = indexs.First();
 			foreach (var index in indexs.Skip(1)) {
@@ -86,14 +86,14 @@ namespace Podcatcher.ChunkedDownloader
 			}
 			var finalChunk = new ChunkData () {
 				Start = previousIndex,
-				Length = Math.Max
+				Length = uint.MaxValue
 			};
 		}
 
-		protected async Task<IEnumerable<uint>> GetNextUnusedIndex(int startPosition)
+		protected IEnumerable<uint> GetNextUnusedIndex(int startPosition)
 		{
-			var file = await GetFile();
-			using (var stream = await file.OpenAsync()) {
+			var file = GetFile().Result;
+			using (var stream = file.OpenAsync(FileAccess.Read).Result) {
 				// load in a buffer from a file and find instances of Unused.
 				// loading a large buffer rather than checking each byte from
 				// a file has better performance.
@@ -105,11 +105,11 @@ namespace Podcatcher.ChunkedDownloader
 				// the buffer into the beginning of the next buffer so that
 				// flag will be read in the next iteration.
 
-				byte[] buffer = new byte[BufferLength + (UnusedFlag - 1)];
+				byte[] buffer = new byte[BufferLength + (UnusedFlag.Length - 1)];
 				while (stream.Position < stream.Length) {
-					uint relativeStreamPosition = stream.Position - (UnusedFlag - 1);
+					uint relativeStreamPosition = ((uint)stream.Position) - (uint)(UnusedFlag.Length - 1);
 
-					await stream.ReadAsync(buffer, UnusedFlag.Length - 1, BufferLength);
+					stream.Read(buffer, UnusedFlag.Length - 1, BufferLength);
 
 					var indexs = FindArrayInArray(buffer, UnusedFlag);
 
@@ -124,21 +124,21 @@ namespace Podcatcher.ChunkedDownloader
 			}
 		}
 
-		protected IEnumerable<uint> FindArrayInArray<T>(T[] sourceArray, T[] match, int stopIndex = Math.Max)
+		protected IEnumerable<uint> FindArrayInArray<T>(T[] sourceArray, T[] match, int stopIndex = int.MaxValue)
 		{
 			if (sourceArray == null || match == null) {
 				throw new NullReferenceException ();
 			}
 
 			if (match.Length > sourceArray.Length) {
-				return;
+				yield break;
 			}
 
 			int currentMatchIndex = 0;
 			uint index = 0;
 			foreach(var s in sourceArray)
 			{
-				if (s == match [currentMatchIndex]) {
+				if (s.Equals(match[currentMatchIndex])) {
 					if (currentMatchIndex == match.Length) {
 						yield return index;
 						currentMatchIndex = 0;
@@ -158,7 +158,7 @@ namespace Podcatcher.ChunkedDownloader
 		public async Task<IChunkData> StoreChunk(uint start, byte[] data)
 		{
 			var file = await GetFile ();
-			using (var stream = await file.OpenAsync ()) {
+			using (var stream = await file.OpenAsync(FileAccess.ReadAndWrite)) {
 				if (stream.CanSeek && stream.CanWrite) {
 					
 					stream.Position = start;
