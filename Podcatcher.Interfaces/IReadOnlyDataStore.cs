@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Podcatcher.Interfaces
 {
-    public interface IReadonlyDataStore
+    public interface IReadOnlyDataStore
     {
 		/// <summary>
 		/// Determines whether this instance is chunkable.

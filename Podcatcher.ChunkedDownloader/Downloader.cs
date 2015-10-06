@@ -13,7 +13,7 @@ namespace Podcatcher.ChunkedDownloader
     {
         public IChunkStore DestinationStore { get; private set; }
 
-		public IReadonlyDataStore SourceDataStore{ get; private set; }
+		public IReadOnlyDataStore SourceDataStore{ get; private set; }
 
         public ushort DefaultLength { get; set; } = 500;
 
@@ -21,7 +21,7 @@ namespace Podcatcher.ChunkedDownloader
 
         protected Downloader() { }
 
-		public Downloader(IChunkStore destinationDataStore, IReadonlyDataStore sourceDataStore)
+		public Downloader(IChunkStore destinationDataStore, IReadOnlyDataStore sourceDataStore)
         {
             DestinationStore = destinationDataStore;
 			SourceDataStore = sourceDataStore;
@@ -37,7 +37,11 @@ namespace Podcatcher.ChunkedDownloader
 		/// <returns>The next empty chunk.</returns>
         protected async Task<IChunkData> GetNextEmptyChunk()
 		{
-			var emptyChunk = await DestinationStore.GetNextEmptyChunk ();
+			var emptyChunks = await DestinationStore.GetNextEmptyChunk();
+			var emptyChunk = emptyChunks.FirstOrDefault();
+			if (emptyChunk == null) {
+				return null;
+			}
 			uint length = Math.Min (emptyChunk.Length, DefaultLength);
 
 			var chunkData = new ChunkData () { 

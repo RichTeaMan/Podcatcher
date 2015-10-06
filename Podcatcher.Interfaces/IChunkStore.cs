@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Podcatcher.Interfaces
 {
-	public interface IChunkStore : IReadonlyDataStore
+	public interface IChunkStore : IReadOnlyDataStore
     {
 		Task<IChunkData> StoreChunk(uint start, byte[] data);
 		Task<IEnumerable<IChunkData>> GetNextEmptyChunk();
