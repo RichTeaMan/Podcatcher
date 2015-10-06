@@ -28,12 +28,22 @@ namespace Podcatcher.ChunkedDownloader
 			
 		}
 
-		public async Task<IChunkData> GetNextEmptyChunk()
+		public async Task<IChunk> GetChunk(IChunkData chunkData)
 		{
-			throw new NotImplementedException ();
+			throw new NotImplementedException();
 		}
 
-		public Task<bool> IsChunkable()
+		public async Task<IEnumerable<IChunkData>> GetNextEmptyChunk()
+		{
+			throw new NotImplementedException();
+		}
+
+		public async Task<IChunkData> StoreChunk(uint start, byte[] data)
+		{
+			throw new NotImplementedException();
+		}
+
+		public async Task<bool> IsChunkable()
 		{
 			return true;
 		}
