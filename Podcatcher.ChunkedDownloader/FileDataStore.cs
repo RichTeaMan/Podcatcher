@@ -21,16 +21,14 @@ namespace Podcatcher.ChunkedDownloader
 		/// </summary>
 		/// <value>The file path.</value>
 		public string FilePath { get; private set; }
-		public uint FileSize { get; private set; }
 
 		protected FileDataStore()
 		{
 		}
 
-		public FileDataStore (string filePath, uint fileSize) : this()
+		public FileDataStore (string filePath) : this()
 		{
 			FilePath = filePath;
-			FileSize = fileSize;
 		}
 
 		protected IFileSystem FS {
