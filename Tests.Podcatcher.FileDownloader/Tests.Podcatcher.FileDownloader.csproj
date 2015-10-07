@@ -29,10 +29,33 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="PCLStorage">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\net45\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\net45\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Podcatcher.ChunkedDownloader\Podcatcher.ChunkedDownloader.csproj">
+      <Project>{0A191063-F152-4A6C-AA95-D725C9D1C754}</Project>
+      <Name>Podcatcher.ChunkedDownloader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Podcatcher.Interfaces\Podcatcher.Interfaces.csproj">
+      <Project>{39F5073D-3515-46A9-954D-70FD69564BD9}</Project>
+      <Name>Podcatcher.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Podcatcher.Load\Podcatcher.Load.csproj">
+      <Project>{273BE202-9F81-4E98-857D-38E13AD367BB}</Project>
+      <Name>Podcatcher.Load</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
 </Project>

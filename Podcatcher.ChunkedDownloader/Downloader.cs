@@ -70,7 +70,8 @@ namespace Podcatcher.ChunkedDownloader
 					await DestinationStore.StoreChunk(chunk.Start, chunk.Data.ToArray());
 				}
 			}
-			catch(Exception) {
+			catch(Exception ex) {
+				throw ex;
 				// do nothing for now. consider logging and/or aborting after x attempts.
 				return;
 			}
