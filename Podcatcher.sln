@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Podcatcher.CLI", "Podcatcher.CLI\Podcatcher.CLI.csproj", "{8A3999C2-99E5-4506-A355-247A8342CC22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Podcatcher.FileSaver", "Podcatcher.FileSaver\Podcatcher.FileSaver.csproj", "{4362F986-CE48-430C-B7AB-E74B262C1C19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Podcatcher.Manager", "Podcatcher.Manager\Podcatcher.Manager.csproj", "{DE8129C7-DE6D-4998-BE69-B30AF3F8C6B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Podcatcher.Downloader", "Podcatcher.Downloader\Podcatcher.Downloader.csproj", "{7099385B-9787-4B95-B23D-EE83C1287A7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A3999C2-99E5-4506-A355-247A8342CC22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A3999C2-99E5-4506-A355-247A8342CC22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A3999C2-99E5-4506-A355-247A8342CC22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A3999C2-99E5-4506-A355-247A8342CC22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4362F986-CE48-430C-B7AB-E74B262C1C19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4362F986-CE48-430C-B7AB-E74B262C1C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4362F986-CE48-430C-B7AB-E74B262C1C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4362F986-CE48-430C-B7AB-E74B262C1C19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE8129C7-DE6D-4998-BE69-B30AF3F8C6B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE8129C7-DE6D-4998-BE69-B30AF3F8C6B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE8129C7-DE6D-4998-BE69-B30AF3F8C6B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE8129C7-DE6D-4998-BE69-B30AF3F8C6B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7099385B-9787-4B95-B23D-EE83C1287A7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7099385B-9787-4B95-B23D-EE83C1287A7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7099385B-9787-4B95-B23D-EE83C1287A7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7099385B-9787-4B95-B23D-EE83C1287A7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
