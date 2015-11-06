@@ -20,7 +20,7 @@ namespace Podcatcher.Manager
 
         public async Task<IChunk> DownloadChunk()
         {
-            var chunkData = ChunkReader.GetEmptyChunks(Destination).FirstOrDefault();
+            var chunkData = await ChunkReader.GetNextEmptyChunk(Destination);
             if (chunkData == null)
             {
                 return new Chunk(0, 0, null);
