@@ -20,7 +20,7 @@ namespace Podcatcher.FileSaver
             return filepath + ".parts";
         }
 
-        protected async Task<IFolder> CreateFolder(string filepath)
+        public async Task<IFolder> CreateFolder(string filepath)
         {
             IFolder folder;
             var exists = await FileSystem.Current.LocalStorage.CheckExistsAsync(GetDirectoryName(filepath));

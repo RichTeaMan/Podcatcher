@@ -15,17 +15,30 @@ namespace Podcatcher.FileSaver.Tests
         private ChunkSaver ChunkSaver;
         private MemoryStream resourceStream;
 
-
-        [TestInitialize]
-        public void Initialise()
+        private void CreateResource()
         {
-            ChunkSaver = new ChunkSaver();
             var bytes = File.ReadAllBytes(RESOURCE_NAME);
             resourceStream = new MemoryStream(bytes);
-            if (Directory.Exists(TEST_OUTPUT))
-            {
-                Directory.Delete(TEST_OUTPUT, true);
-            }
+        }
+
+        private async Task DeleteDirectory()
+        {
+            var directory = await ChunkSaver.CreateFolder(TEST_OUTPUT);
+            await directory.DeleteAsync();
+        }
+
+        [TestInitialize]
+        public async void Initialise()
+        {
+            ChunkSaver = new ChunkSaver();
+            CreateResource();
+            await DeleteDirectory();
+        }
+
+        [TestCleanup]
+        public async void Cleanup()
+        {
+            await DeleteDirectory();
         }
 
         [TestMethod]
