@@ -51,42 +51,50 @@ namespace Podcatcher.FileSaver
             }
         }
 
-        public async Task<Stream> GetCombinedChunks(string filepath)
+        public async Task<Stream> GetCombinedStream(string filepath)
         {
-            var comStream = new MemoryStream();
-            var folder = await CreateFolder(filepath);
-            int position = 0;
-            var files = await folder.GetFilesAsync();
+            var comFile = await FileSystem.Current.LocalStorage.GetFileAsync(filepath);
+            var comStream = await comFile.OpenAsync(FileAccess.Read);
+            return comStream;
+        }
 
-            var fileNameMap = new Dictionary<int, IFile>();
-            foreach (var file in files)
+        public async Task<Stream> CreateCombinedStream(string filepath)
+        {
+            var comFile = await FileSystem.Current.LocalStorage.CreateFileAsync(filepath, CreationCollisionOption.ReplaceExisting);
+            using (var comStream = await comFile.OpenAsync(FileAccess.ReadAndWrite))
             {
-                int chunkPosition;
-                if (int.TryParse(file.Name, out chunkPosition))
-                {
-                    fileNameMap.Add(chunkPosition, file);
-                }
-            }
+                var folder = await CreateFolder(filepath);
+                int position = 0;
+                var files = await folder.GetFilesAsync();
 
-            foreach (var chunk in fileNameMap.OrderBy(f => f.Key))
-            {
-                if (chunk.Key == position)
+                var fileNameMap = new Dictionary<int, IFile>();
+                foreach (var file in files)
                 {
-                    using (var file = await chunk.Value.OpenAsync(PCLStorage.FileAccess.Read))
+                    int chunkPosition;
+                    if (int.TryParse(file.Name, out chunkPosition))
                     {
-                        position += (int)file.Length;
-                        var data = await ReadBytes(file);
-                        comStream.Write(data, 0, data.Length);
+                        fileNameMap.Add(chunkPosition, file);
                     }
                 }
-                else
+
+                foreach (var chunk in fileNameMap.OrderBy(f => f.Key))
                 {
-                    comStream.Dispose();
-                    throw new InvalidOperationException(String.Format("Cannot combine chunks. Chunk at position {0} is missing.", position));
+                    if (chunk.Key == position)
+                    {
+                        using (var file = await chunk.Value.OpenAsync(PCLStorage.FileAccess.Read))
+                        {
+                            position += (int)file.Length;
+                            var data = await ReadBytes(file);
+                            comStream.Write(data, 0, data.Length);
+                        }
+                    }
+                    else
+                    {
+                        throw new InvalidOperationException(String.Format("Cannot combine chunks. Chunk at position {0} is missing.", position));
+                    }
                 }
             }
-            comStream.Position = 0;
-            return comStream;
+            return await GetCombinedStream(filepath);
         }
 
         protected async Task<byte[]> ReadBytes(Stream stream)

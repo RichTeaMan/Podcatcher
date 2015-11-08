@@ -67,7 +67,7 @@ namespace Podcatcher.FileSaver.Tests
         public async Task SaveFile()
         {
             await SaveChunksInOrder();
-            var comStream = await ChunkSaver.GetCombinedChunks(TEST_OUTPUT);
+            var comStream = await ChunkSaver.CreateCombinedStream(TEST_OUTPUT);
 
             byte[] comData;
             using (var ms = new MemoryStream())
