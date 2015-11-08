@@ -16,7 +16,7 @@ namespace Podcatcher.Manager
 
         public int ChunkLength { get; set; } = 1024 * 512;
 
-        protected ChunkedDownloader ChunkDownloader { get; set; }
+        protected HttpChunkedDownloader ChunkDownloader { get; set; }
         protected ChunkSaver ChunkSaver { get; set; }
 
         public bool Complete { get; private set; }
@@ -26,7 +26,7 @@ namespace Podcatcher.Manager
             SourceLink = sourceLink;
             Destination = destination;
 
-            ChunkDownloader = new ChunkedDownloader();
+            ChunkDownloader = new HttpChunkedDownloader();
             ChunkSaver = new ChunkSaver();
 
             Complete = false;

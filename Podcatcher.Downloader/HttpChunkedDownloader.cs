@@ -9,9 +9,9 @@ using Podcatcher.Domain;
 
 namespace Podcatcher.Downloader
 {
-    public class ChunkedDownloader
+    public class HttpChunkedDownloader
     {
-        public ChunkedDownloader()
+        public HttpChunkedDownloader()
         {
         }
 

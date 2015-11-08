@@ -8,17 +8,17 @@ using Podcatcher.Domain;
 namespace Podcatcher.Downloader.Tests
 {
     [TestClass]
-    public class ChunkedDownloaderTest
+    public class HttpChunkedDownloaderTest
     {
         const string RESOURCE_LINK = "https://upload.wikimedia.org/wikipedia/commons/9/96/Macrocranion_tupaiodon_01.jpg";
         const int RESOURCE_LENGTH = 8248016;
 
-        ChunkedDownloader Downloader;
+        HttpChunkedDownloader Downloader;
 
         [TestInitialize]
         public void Initialise()
         {
-            Downloader = new ChunkedDownloader();
+            Downloader = new HttpChunkedDownloader();
         }
 
         [TestMethod]
