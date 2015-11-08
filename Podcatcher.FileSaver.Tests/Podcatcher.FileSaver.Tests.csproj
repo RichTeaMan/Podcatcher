@@ -62,6 +62,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Podcatcher.Domain\Podcatcher.Domain.csproj">
+      <Project>{55431b6b-86dc-4821-b795-65908fe02b67}</Project>
+      <Name>Podcatcher.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Podcatcher.FileSaver\Podcatcher.FileSaver.csproj">
       <Project>{4362f986-ce48-430c-b7ab-e74b262c1c19}</Project>
       <Name>Podcatcher.FileSaver</Name>

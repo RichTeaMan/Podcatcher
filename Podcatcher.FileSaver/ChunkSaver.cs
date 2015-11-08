@@ -64,20 +64,9 @@ namespace Podcatcher.FileSaver
             var comFile = await FileSystem.Current.LocalStorage.CreateFileAsync(filepath, CreationCollisionOption.ReplaceExisting);
             using (var comStream = await comFile.OpenAsync(FileAccess.ReadAndWrite))
             {
-                var folder = await CreateFolder(filepath);
+                var fileNameMap = await GetChunkMap(filepath);
+
                 int position = 0;
-                var files = await folder.GetFilesAsync();
-
-                var fileNameMap = new Dictionary<int, IFile>();
-                foreach (var file in files)
-                {
-                    int chunkPosition;
-                    if (int.TryParse(file.Name, out chunkPosition))
-                    {
-                        fileNameMap.Add(chunkPosition, file);
-                    }
-                }
-
                 foreach (var chunk in fileNameMap.OrderBy(f => f.Key))
                 {
                     if (chunk.Key == position)
@@ -98,6 +87,23 @@ namespace Podcatcher.FileSaver
             return await GetCombinedStream(filepath);
         }
 
+        protected async Task<Dictionary<int, IFile>> GetChunkMap(string filepath)
+        {
+            var folder = await CreateFolder(filepath);
+            var files = await folder.GetFilesAsync();
+            var fileNameMap = new Dictionary<int, IFile>();
+            foreach (var file in files)
+            {
+                int chunkPosition;
+                if (int.TryParse(file.Name, out chunkPosition))
+                {
+                    fileNameMap.Add(chunkPosition, file);
+                }
+            }
+
+            return fileNameMap;
+        }
+
         protected async Task<byte[]> ReadBytes(Stream stream)
         {
             int current = 0;
@@ -111,9 +117,45 @@ namespace Podcatcher.FileSaver
             return data;
         }
 
-        public Task<IChunkInfo> GetNextEmptyChunk(string filepath, int startPosition = 0)
+        public async Task<IChunkInfo> GetNextEmptyChunk(string filepath, int startPosition = 0)
         {
-            throw new NotImplementedException();
+            ChunkInfo previousChunk = null;
+
+            int previousStart = startPosition;
+            var chunks = await GetChunkMap(filepath);
+
+            foreach (var chunk in chunks.OrderBy(c => c.Key))
+            {
+                using (var file = await chunk.Value.OpenAsync(FileAccess.Read))
+                {
+                    int chunkStart = chunk.Key;
+                    int chunkEnd = chunkStart + (int)file.Length;
+
+                    if (previousChunk != null)
+                    {
+                        if ((previousChunk.Start + previousChunk.Length) <= chunkStart)
+                        {
+                            if (startPosition < chunkStart)
+                            {
+                                int gapStart = Math.Max(startPosition, previousChunk.Start + previousChunk.Length);
+                                var gapChunk = new ChunkInfo(gapStart, chunkEnd - gapStart);
+                                return gapChunk;
+                            }
+                        }
+                    }
+                    previousChunk = new ChunkInfo(chunkStart, (int)file.Length);
+                }
+            }
+            ChunkInfo fullChunk;
+            if (previousChunk == null)
+            {
+                fullChunk = new ChunkInfo(0, int.MaxValue);
+            }
+            else
+            {
+                fullChunk = new ChunkInfo(previousChunk.Start + previousChunk.Length, int.MaxValue);
+            }
+            return fullChunk;
         }
 
         public IEnumerable<IChunkInfo> GetEmptyChunks(string filepath)

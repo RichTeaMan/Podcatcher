@@ -64,6 +64,34 @@ namespace Podcatcher.FileSaver.Tests
         }
 
         [TestMethod]
+        public async Task GetNextChunk()
+        {
+            var firstChunk = await ChunkSaver.GetNextEmptyChunk(TEST_OUTPUT, 0);
+
+            Assert.AreEqual(0, firstChunk.Start);
+            Assert.AreEqual(int.MaxValue, firstChunk.Length);
+
+            int bufferLength = 1024 * 50;
+            var buffer = new byte[bufferLength];
+            int read1 = resourceStream.Read(buffer, 0, bufferLength);
+            await ChunkSaver.SaveFile(TEST_OUTPUT, 0, buffer, read1);
+
+            var secondChunk = await ChunkSaver.GetNextEmptyChunk(TEST_OUTPUT, 0);
+
+            Assert.AreEqual(read1, secondChunk.Start);
+            Assert.AreEqual(int.MaxValue, secondChunk.Length);
+
+            int read2 = resourceStream.Read(buffer, 0, bufferLength);
+            int read3 = resourceStream.Read(buffer, 0, bufferLength);
+            await ChunkSaver.SaveFile(TEST_OUTPUT, read2, buffer, read3);
+
+            var thirdChunk = await ChunkSaver.GetNextEmptyChunk(TEST_OUTPUT, 0);
+
+            Assert.AreEqual(read1, thirdChunk.Start);
+            Assert.AreEqual(read3, thirdChunk.Length);
+        }
+
+        [TestMethod]
         public async Task SaveFile()
         {
             await SaveChunksInOrder();

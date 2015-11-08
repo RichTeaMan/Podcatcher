@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Podcatcher.Domain
 {
-    public class ChunkInfo
+    public class ChunkInfo : IChunkInfo
     {
         public int Start { get; private set;  }
         public int Length { get; private set; }
