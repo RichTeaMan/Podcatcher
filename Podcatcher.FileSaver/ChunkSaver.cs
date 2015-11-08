@@ -1,4 +1,5 @@
 ﻿using PCLStorage;
+using Podcatcher.Domain;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -108,6 +109,22 @@ namespace Podcatcher.FileSaver
                 current += bytesRead;
             }
             return data;
+        }
+
+        public Task<IChunkInfo> GetNextEmptyChunk(string filepath, int startPosition = 0)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<IChunkInfo> GetEmptyChunks(string filepath)
+        {
+            int position = 0;
+            IChunkInfo chunkInfo;
+            // TODO: Could this ever actually work?
+            while ((chunkInfo = GetNextEmptyChunk(filepath, position).Result) != null)
+            {
+                yield return chunkInfo;
+            }
         }
 
     }

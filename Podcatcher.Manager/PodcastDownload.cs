@@ -15,13 +15,12 @@ namespace Podcatcher.Manager
 
         public int ChunkLength { get; set; }
 
-        protected ChunkReader ChunkReader { get; set; }
         protected ChunkedDownloader ChunkDownloader { get; set; }
         protected ChunkSaver ChunkSaver { get; set; }
 
         public async Task<IChunk> DownloadChunk()
         {
-            var chunkData = await ChunkReader.GetNextEmptyChunk(Destination);
+            var chunkData = await ChunkSaver.GetNextEmptyChunk(Destination);
             if (chunkData == null)
             {
                 return new Chunk(0, 0, null);
