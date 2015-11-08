@@ -10,7 +10,7 @@ namespace Podcatcher.Domain
     {
         public byte[] Data { get; private set; }
 
-        public Chunk(int start, int length, byte[] data) : base(start, length)
+        public Chunk(int start, byte[] data) : base(start, data.Length)
         {
             Data = data;
         }
