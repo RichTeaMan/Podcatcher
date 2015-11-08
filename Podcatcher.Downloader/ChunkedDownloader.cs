@@ -23,7 +23,7 @@ namespace Podcatcher.Downloader
             {
                 message.Headers.Range = new RangeHeaderValue(
                     chunkData.Start,
-                    chunkData.Start + chunkData.Length
+                    chunkData.Start + (chunkData.Length - 1)
                 );
 
                 using (var wc = new HttpClient())
