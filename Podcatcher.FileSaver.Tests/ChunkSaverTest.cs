@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Podcatcher.FileSaver.Tests
 {
     [TestClass]
-    public class FileSaverTest
+    public class ChunkSaverTest
     {
         const string RESOURCE_NAME = "technology-computer-chips-gigabyte.jpg";
         const int RESOURCE_LENGTH = 3437019;
@@ -52,8 +52,8 @@ namespace Podcatcher.FileSaver.Tests
         public async Task SaveChunksInOrder()
         {
             int position = 0;
-            
-            while(position < RESOURCE_LENGTH)
+
+            while (position < RESOURCE_LENGTH)
             {
                 var buffer = new byte[1024 * 50];
                 int read = resourceStream.Read(buffer, 0, buffer.Length);
