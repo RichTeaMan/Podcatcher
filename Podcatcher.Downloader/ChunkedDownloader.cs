@@ -13,7 +13,7 @@ namespace Podcatcher.Downloader
 
         }
 
-        public async Task<byte[]> DownloadChunk(int start, int length)
+        public Task<byte[]> DownloadChunk(int start, int length)
         {
             throw new NotImplementedException();
         }

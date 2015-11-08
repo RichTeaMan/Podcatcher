@@ -13,7 +13,7 @@ namespace Podcatcher.FileSaver
 
         }
 
-        public async Task<ChunkData> GetNextEmptyChunk(string filepath, int startPosition = 0)
+        public Task<ChunkData> GetNextEmptyChunk(string filepath, int startPosition = 0)
         {
             throw new NotImplementedException();
         }
@@ -29,7 +29,7 @@ namespace Podcatcher.FileSaver
             }
         }
 
-        public async Task<int> GetFileLength(string filepath)
+        public Task<int> GetFileLength(string filepath)
         {
             throw new NotImplementedException();
         }
