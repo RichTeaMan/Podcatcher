@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Threading.Tasks;
 using System.IO;
 using Podcatcher.Downloader;
+using PCLStorage;
 
 namespace Podcatcher.Manager.Tests
 {
@@ -19,10 +20,30 @@ namespace Podcatcher.Manager.Tests
 
         FileDownload downloader;
 
+        private async Task DeleteDirectory()
+        {
+            var fileExists = await FileSystem.Current.LocalStorage.CheckExistsAsync(OUTPUT);
+            if (fileExists == ExistenceCheckResult.FileExists)
+            {
+                var file = await FileSystem.Current.LocalStorage.GetFileAsync(OUTPUT);
+                await file.DeleteAsync();
+            }
+
+            var directory = await downloader.ChunkSaver.CreateFolder(OUTPUT);
+            await directory.DeleteAsync();
+        }
+
         [TestInitialize]
-        public void Initialise()
+        public async void Initialise()
         {
             downloader = new FileDownload(EXT_RESOURCE_LINK, OUTPUT);
+            await DeleteDirectory();
+        }
+
+        [TestCleanup]
+        public async void Cleanup()
+        {
+            await DeleteDirectory();
         }
 
         [TestMethod]

@@ -3,6 +3,7 @@ using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
 using System.Threading.Tasks;
+using PCLStorage;
 
 namespace Podcatcher.FileSaver.Tests
 {
@@ -23,6 +24,13 @@ namespace Podcatcher.FileSaver.Tests
 
         private async Task DeleteDirectory()
         {
+            var fileExists = await FileSystem.Current.LocalStorage.CheckExistsAsync(TEST_OUTPUT);
+            if (fileExists == ExistenceCheckResult.FileExists)
+            {
+                var file = await FileSystem.Current.LocalStorage.GetFileAsync(TEST_OUTPUT);
+                await file.DeleteAsync();
+            }
+
             var directory = await ChunkSaver.CreateFolder(TEST_OUTPUT);
             await directory.DeleteAsync();
         }
@@ -132,9 +140,9 @@ namespace Podcatcher.FileSaver.Tests
         public async Task SaveFile()
         {
             await SaveChunksInOrder();
-            var comStream = await ChunkSaver.CreateCombinedStream(TEST_OUTPUT);
-
             byte[] comData;
+
+            using (var comStream = await ChunkSaver.CreateCombinedStream(TEST_OUTPUT))
             using (var ms = new MemoryStream())
             {
                 comStream.CopyTo(ms);
