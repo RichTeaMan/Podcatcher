@@ -29,13 +29,24 @@ namespace Podcatcher.Downloader
                 using (var wc = new HttpClient())
                 using (var response = await wc.SendAsync(message))
                 {
-                    var content = await response.Content.ReadAsByteArrayAsync();
-                    int start = chunkData.Start;
-                    int length = content.Length;
-                    var chunk = new Chunk(start, length, content);
-                    return chunk;
+                    switch (response.StatusCode)
+                    {
+                        case System.Net.HttpStatusCode.PartialContent:
+                            {
+                                var content = await response.Content.ReadAsByteArrayAsync();
+                                int start = chunkData.Start;
+                                int length = content.Length;
+                                var chunk = new Chunk(start, length, content);
+                                return chunk;
+                            }
+                        case System.Net.HttpStatusCode.RequestedRangeNotSatisfiable:
+                            return null;
+                        default:
+                            throw new Exception("Unknown response");
+                    }
                 }
             }
         }
+
     }
 }

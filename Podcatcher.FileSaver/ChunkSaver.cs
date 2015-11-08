@@ -133,12 +133,12 @@ namespace Podcatcher.FileSaver
 
                     if (previousChunk != null)
                     {
-                        if ((previousChunk.Start + previousChunk.Length) <= chunkStart)
+                        if ((previousChunk.Start + previousChunk.Length) < chunkStart)
                         {
                             if (startPosition < chunkStart)
                             {
                                 int gapStart = Math.Max(startPosition, previousChunk.Start + previousChunk.Length);
-                                var gapChunk = new ChunkInfo(gapStart, chunkEnd - gapStart);
+                                var gapChunk = new ChunkInfo(gapStart, chunkStart - gapStart);
                                 return gapChunk;
                             }
                         }

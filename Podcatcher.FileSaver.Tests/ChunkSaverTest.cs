@@ -64,12 +64,12 @@ namespace Podcatcher.FileSaver.Tests
         }
 
         [TestMethod]
-        public async Task GetNextChunk()
+        public async Task GetNextChunkWithSkip()
         {
             var firstChunk = await ChunkSaver.GetNextEmptyChunk(TEST_OUTPUT, 0);
 
-            Assert.AreEqual(0, firstChunk.Start);
-            Assert.AreEqual(int.MaxValue, firstChunk.Length);
+            Assert.AreEqual(0, firstChunk.Start, "First chunk position.");
+            Assert.AreEqual(int.MaxValue, firstChunk.Length, "First chunk length.");
 
             int bufferLength = 1024 * 50;
             var buffer = new byte[bufferLength];
@@ -78,18 +78,55 @@ namespace Podcatcher.FileSaver.Tests
 
             var secondChunk = await ChunkSaver.GetNextEmptyChunk(TEST_OUTPUT, 0);
 
-            Assert.AreEqual(read1, secondChunk.Start);
-            Assert.AreEqual(int.MaxValue, secondChunk.Length);
+            Assert.AreEqual(read1, secondChunk.Start, "Second chunk position.");
+            Assert.AreEqual(int.MaxValue, secondChunk.Length, "Second chunk length.");
 
             int read2 = resourceStream.Read(buffer, 0, bufferLength);
             int read3 = resourceStream.Read(buffer, 0, bufferLength);
-            await ChunkSaver.SaveFile(TEST_OUTPUT, read2, buffer, read3);
+            await ChunkSaver.SaveFile(TEST_OUTPUT, read2 + read1, buffer, read3);
 
             var thirdChunk = await ChunkSaver.GetNextEmptyChunk(TEST_OUTPUT, 0);
 
-            Assert.AreEqual(read1, thirdChunk.Start);
-            Assert.AreEqual(read3, thirdChunk.Length);
+            Assert.AreEqual(read1, thirdChunk.Start, "Third chunk position.");
+            Assert.AreEqual(read2, thirdChunk.Length, "Third chunk length.");
         }
+
+        [TestMethod]
+        public async Task GetNextChunk()
+        {
+            int bufferLength = 1024 * 50;
+            var buffer = new byte[bufferLength];
+
+            var firstChunk = await ChunkSaver.GetNextEmptyChunk(TEST_OUTPUT, 0);
+
+            Assert.AreEqual(resourceStream.Position, firstChunk.Start, "First chunk position.");
+            Assert.AreEqual(int.MaxValue, firstChunk.Length, "First chunk length.");
+            
+            int read1 = resourceStream.Read(buffer, 0, bufferLength);
+            await ChunkSaver.SaveFile(TEST_OUTPUT, 0, buffer, read1);
+
+            var secondChunk = await ChunkSaver.GetNextEmptyChunk(TEST_OUTPUT, 0);
+
+            Assert.AreEqual(resourceStream.Position, secondChunk.Start, "Second chunk position.");
+            Assert.AreEqual(int.MaxValue, secondChunk.Length, "Second chunk length.");
+
+            int read2 = resourceStream.Read(buffer, 0, bufferLength);
+            await ChunkSaver.SaveFile(TEST_OUTPUT, read1, buffer, read2);
+
+            var thirdChunk = await ChunkSaver.GetNextEmptyChunk(TEST_OUTPUT, 0);
+
+            Assert.AreEqual(resourceStream.Position, thirdChunk.Start, "Third chunk position.");
+            Assert.AreEqual(int.MaxValue, thirdChunk.Length, "Third chunk length.");
+
+            int read3 = resourceStream.Read(buffer, 0, bufferLength);
+            await ChunkSaver.SaveFile(TEST_OUTPUT, read2 + read1, buffer, read3);
+
+            var fourthChunk = await ChunkSaver.GetNextEmptyChunk(TEST_OUTPUT, 0);
+
+            Assert.AreEqual(resourceStream.Position, fourthChunk.Start, "Fourth chunk position.");
+            Assert.AreEqual(int.MaxValue, fourthChunk.Length, "Fourth chunk length.");
+        }
+
 
         [TestMethod]
         public async Task SaveFile()
