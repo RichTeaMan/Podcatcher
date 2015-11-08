@@ -43,7 +43,7 @@ namespace Podcatcher.Downloader
                                 var content = await response.Content.ReadAsByteArrayAsync();
                                 int start = chunkData.Start;
                                 int length = content.Length;
-                                var chunk = new Chunk(start, length, content);
+                                var chunk = new Chunk(start, content);
                                 return chunk;
                             }
                         case System.Net.HttpStatusCode.RequestedRangeNotSatisfiable:

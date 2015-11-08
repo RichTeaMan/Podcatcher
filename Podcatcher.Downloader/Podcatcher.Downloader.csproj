@@ -38,6 +38,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileChunkedDownloader.cs" />
     <Compile Include="HttpChunkedDownloader.cs" />
     <Compile Include="IChunkedDownloader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
