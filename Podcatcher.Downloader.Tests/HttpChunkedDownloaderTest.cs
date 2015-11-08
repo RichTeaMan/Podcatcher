@@ -18,7 +18,7 @@ namespace Podcatcher.Downloader.Tests
         [TestInitialize]
         public void Initialise()
         {
-            Downloader = new HttpChunkedDownloader();
+            Downloader = new HttpChunkedDownloader() { Url = RESOURCE_LINK };
         }
 
         [TestMethod]
@@ -43,7 +43,7 @@ namespace Podcatcher.Downloader.Tests
         {
             // get 1kb from start
             var chunkInfo = new ChunkInfo(0, 1024);
-            var chunk = await Downloader.DownloadChunk(RESOURCE_LINK, chunkInfo);
+            var chunk = await Downloader.DownloadChunk(chunkInfo);
 
             Assert.AreEqual(chunkInfo.Start, chunk.Start);
             Assert.AreEqual(chunkInfo.Length, chunk.Length);
@@ -54,7 +54,7 @@ namespace Podcatcher.Downloader.Tests
         {
             // get 1kb from near end
             var chunkInfo = new ChunkInfo(RESOURCE_LENGTH - 512, 1024);
-            var chunk = await Downloader.DownloadChunk(RESOURCE_LINK, chunkInfo);
+            var chunk = await Downloader.DownloadChunk(chunkInfo);
 
             Assert.AreEqual(chunkInfo.Start, chunk.Start);
             Assert.AreEqual(512, chunk.Length);
@@ -66,7 +66,7 @@ namespace Podcatcher.Downloader.Tests
             // get 1kb from near end
             var chunkInfo = new ChunkInfo(RESOURCE_LENGTH, 1024);
 
-            var chunk = await Downloader.DownloadChunk(RESOURCE_LINK, chunkInfo);
+            var chunk = await Downloader.DownloadChunk(chunkInfo);
             Assert.AreEqual(chunkInfo.Start, chunk.Start);
             Assert.AreEqual(0, chunk.Length);
         }

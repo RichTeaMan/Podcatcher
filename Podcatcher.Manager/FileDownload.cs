@@ -26,7 +26,7 @@ namespace Podcatcher.Manager
             SourceLink = sourceLink;
             Destination = destination;
 
-            ChunkDownloader = new HttpChunkedDownloader();
+            ChunkDownloader = new HttpChunkedDownloader() { Url = sourceLink };
             ChunkSaver = new ChunkSaver();
 
             Complete = false;
@@ -40,7 +40,7 @@ namespace Podcatcher.Manager
                 chunkInfo.Start,
                 Math.Min(ChunkLength, chunkInfo.Length)
             );
-            var chunk = await ChunkDownloader.DownloadChunk(SourceLink, checkedChunkInfo);
+            var chunk = await ChunkDownloader.DownloadChunk(checkedChunkInfo);
             return chunk;
         }
 

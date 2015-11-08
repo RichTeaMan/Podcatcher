@@ -5,6 +5,6 @@ namespace Podcatcher.Downloader
 {
     public interface IChunkedDownloader
     {
-        Task<IChunk> DownloadChunk(string url, IChunkInfo chunkData);
+        Task<IChunk> DownloadChunk(IChunkInfo chunkData);
     }
 }

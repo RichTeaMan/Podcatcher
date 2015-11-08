@@ -11,15 +11,22 @@ namespace Podcatcher.Downloader
 {
     public class HttpChunkedDownloader : IChunkedDownloader
     {
+        public string Url { get; set; }
+
         public HttpChunkedDownloader()
         {
         }
 
-        public async Task<IChunk> DownloadChunk(string url, IChunkInfo chunkData)
+        public async Task<IChunk> DownloadChunk(IChunkInfo chunkData)
         {
+            if(string.IsNullOrEmpty(Url))
+            {
+                throw new NullReferenceException("Url is null.");
+            }
+
             using (var message = new HttpRequestMessage(
                 HttpMethod.Get,
-                url))
+                Url))
             {
                 message.Headers.Range = new RangeHeaderValue(
                     chunkData.Start,
