@@ -15,15 +15,20 @@ namespace Podcatcher.FileSaver
         {
         }
 
+        public string GetDirectoryName(string filepath)
+        {
+            return filepath + ".parts";
+        }
+
         protected async Task<IFolder> CreateFolder(string filepath)
         {
             IFolder folder;
-            var exists = await FileSystem.Current.LocalStorage.CheckExistsAsync(filepath + ".parts");
+            var exists = await FileSystem.Current.LocalStorage.CheckExistsAsync(GetDirectoryName(filepath));
             switch (exists)
             {
                 case ExistenceCheckResult.FolderExists:
                 case ExistenceCheckResult.NotFound:
-                    folder = await FileSystem.Current.LocalStorage.CreateFolderAsync(filepath, CreationCollisionOption.OpenIfExists);
+                    folder = await FileSystem.Current.LocalStorage.CreateFolderAsync(GetDirectoryName(filepath), CreationCollisionOption.OpenIfExists);
                     break;
                 default:
                     throw new InvalidOperationException("Cannot create directory, file already exists.");
