@@ -4,6 +4,7 @@ using System.Linq;
 using Podcatcher.FileSaver;
 using Podcatcher.Downloader;
 using System.Threading.Tasks;
+using Podcatcher.Domain;
 
 namespace Podcatcher.Manager
 {
@@ -27,8 +28,8 @@ namespace Podcatcher.Manager
             }
             else
             {
-                var data = await ChunkDownloader.DownloadChunk(chunkData.Start, chunkData.Length);
-                return new Chunk(chunkData.Start, data.Length, data);
+                var chunk = await ChunkDownloader.DownloadChunk(SourceLink, chunkData);
+                return chunk;
             }
         }
 

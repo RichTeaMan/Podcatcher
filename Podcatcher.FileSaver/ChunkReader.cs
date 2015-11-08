@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Podcatcher.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,19 +14,19 @@ namespace Podcatcher.FileSaver
 
         }
 
-        public Task<ChunkData> GetNextEmptyChunk(string filepath, int startPosition = 0)
+        public Task<IChunkInfo> GetNextEmptyChunk(string filepath, int startPosition = 0)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<ChunkData> GetEmptyChunks(string filepath)
+        public IEnumerable<IChunkInfo> GetEmptyChunks(string filepath)
         {
             int position = 0;
-            ChunkData chunkData;
+            IChunkInfo chunkInfo;
             // TODO: Could this ever actually work?
-            while((chunkData = GetNextEmptyChunk(filepath, position).Result) != null)
+            while((chunkInfo = GetNextEmptyChunk(filepath, position).Result) != null)
             {
-                yield return chunkData;
+                yield return chunkInfo;
             }
         }
 

@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Net.Http;
 using System.Threading.Tasks;
+using System.Net.Http.Headers;
+using Podcatcher.Domain;
 
 namespace Podcatcher.Downloader
 {
@@ -10,12 +13,29 @@ namespace Podcatcher.Downloader
     {
         public ChunkedDownloader()
         {
-
         }
 
-        public Task<byte[]> DownloadChunk(int start, int length)
+        public async Task<IChunk> DownloadChunk(string url, IChunkInfo chunkData)
         {
-            throw new NotImplementedException();
+            using (var message = new HttpRequestMessage(
+                HttpMethod.Get,
+                url))
+            {
+                message.Headers.Range = new RangeHeaderValue(
+                    chunkData.Start,
+                    chunkData.Start + chunkData.Length
+                );
+
+                using (var wc = new HttpClient())
+                using (var response = await wc.SendAsync(message))
+                {
+                    var content = await response.Content.ReadAsByteArrayAsync();
+                    int start = chunkData.Start;
+                    int length = content.Length;
+                    var chunk = new Chunk(start, length, content);
+                    return chunk;
+                }
+            }
         }
     }
 }

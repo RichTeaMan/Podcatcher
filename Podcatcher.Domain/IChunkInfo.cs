@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Podcatcher.Manager
+namespace Podcatcher.Domain
 {
-    public interface IChunk
+    public interface IChunkInfo
     {
         int Start { get; }
         int Length { get; }
-        byte[] Data { get; }
     }
 }
