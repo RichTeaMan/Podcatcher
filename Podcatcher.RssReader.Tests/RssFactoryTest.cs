@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace Podcatcher.RssReader.Tests
 {
@@ -8,6 +9,7 @@ namespace Podcatcher.RssReader.Tests
     public class RssFactoryTest
     {
         const string RESOURCE_NAME = "DenzelWashingtonIsTheGreatest.xml";
+        const string RESOURCE_LINK = "http://feeds.feedburner.com/DenzelWashingtonIsTheGreatest?format=xml";
 
         private Stream RssStream;
         private RssFactory rssFactory;
@@ -31,7 +33,14 @@ namespace Podcatcher.RssReader.Tests
         [TestMethod]
         public void RssDeserialisation()
         {
-            var rss = rssFactory.createFromString(RssStream);
+            var rss = rssFactory.CreateFromStream(RssStream);
+            Assert.AreEqual("Denzel Washington is the Greatest Actor of All Time Period", rss.channel.Title);
+        }
+
+        [TestMethod]
+        public async Task WebRssDeserialisation()
+        {
+            var rss = await rssFactory.CreateFromUrl(RESOURCE_LINK);
             Assert.AreEqual("Denzel Washington is the Greatest Actor of All Time Period", rss.channel.Title);
         }
     }
