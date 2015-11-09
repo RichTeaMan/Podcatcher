@@ -64,32 +64,56 @@ namespace Podcatcher.RssReader
 
             private ItemsChoiceType[] itemsElementNameField;
 
+            [XmlElementAttribute("title", typeof(string))]
+            public string Title { get; set; }
+
+            [XmlElementAttribute("copyright", typeof(string))]
+            public string Copyright { get; set; }
+
+            [XmlElementAttribute("description", typeof(string))]
+            public string Description { get; set; }
+
+            [XmlElementAttribute("rating", typeof(string), Namespace = "http://search.yahoo.com/mrss/")]
+            public string Rating { get; set; }
+
+            [XmlElementAttribute("author", typeof(string), Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
+            public string Author { get; set; }
+
+            [XmlElementAttribute("language", typeof(string))]
+            public string Language { get; set; }
+
+            [XmlElementAttribute("lastBuildDate", typeof(string))]
+            public string LastBuildDate { get; set; }
+
+            [XmlElementAttribute("link", typeof(string))]
+            public string Link { get; set; }
+
+            [XmlElementAttribute("pubDate", typeof(string))]
+            public string PubDate { get; set; }
+
+            [XmlElementAttribute("explicit", typeof(string), Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
+            public string Explicit { get; set; }
+
+            [XmlElementAttribute("subtitle", typeof(string), Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
+            public string SubTitle { get; set; }
+
+            [XmlElementAttribute("webMaster", typeof(string))]
+            public string WebMaster { get; set; }
+
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("copyright", typeof(string))]
-            [System.Xml.Serialization.XmlElementAttribute("description", typeof(string))]
-            [System.Xml.Serialization.XmlElementAttribute("info", typeof(info), Namespace = "http://rssnamespace.org/feedburner/ext/1.0")]
-            [System.Xml.Serialization.XmlElementAttribute("category", typeof(category), Namespace = "http://search.yahoo.com/mrss/")]
-            [System.Xml.Serialization.XmlElementAttribute("copyright", typeof(string), Namespace = "http://search.yahoo.com/mrss/")]
-            [System.Xml.Serialization.XmlElementAttribute("credit", typeof(credit), Namespace = "http://search.yahoo.com/mrss/")]
-            [System.Xml.Serialization.XmlElementAttribute("description", typeof(description), Namespace = "http://search.yahoo.com/mrss/")]
-            [System.Xml.Serialization.XmlElementAttribute("rating", typeof(string), Namespace = "http://search.yahoo.com/mrss/")]
-            [System.Xml.Serialization.XmlElementAttribute("thumbnail", typeof(thumbnail), Namespace = "http://search.yahoo.com/mrss/")]
-            [System.Xml.Serialization.XmlElementAttribute("author", typeof(string), Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
-            [System.Xml.Serialization.XmlElementAttribute("category", typeof(category1), Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
-            [System.Xml.Serialization.XmlElementAttribute("explicit", typeof(string), Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
-            [System.Xml.Serialization.XmlElementAttribute("image", typeof(image), Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
-            [System.Xml.Serialization.XmlElementAttribute("owner", typeof(owner), Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
-            [System.Xml.Serialization.XmlElementAttribute("subtitle", typeof(string), Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
-            [System.Xml.Serialization.XmlElementAttribute("link", typeof(link), Namespace = "http://www.w3.org/2005/Atom")]
-            [System.Xml.Serialization.XmlElementAttribute("image", typeof(rssChannelImage))]
-            [System.Xml.Serialization.XmlElementAttribute("item", typeof(rssChannelItem))]
-            [System.Xml.Serialization.XmlElementAttribute("language", typeof(string))]
-            [System.Xml.Serialization.XmlElementAttribute("lastBuildDate", typeof(string))]
-            [System.Xml.Serialization.XmlElementAttribute("link", typeof(string))]
-            [System.Xml.Serialization.XmlElementAttribute("pubDate", typeof(string))]
-            [System.Xml.Serialization.XmlElementAttribute("title", typeof(string))]
-            [System.Xml.Serialization.XmlElementAttribute("ttl", typeof(byte))]
-            [System.Xml.Serialization.XmlElementAttribute("webMaster", typeof(string))]
+
+            [XmlElementAttribute("info", typeof(info), Namespace = "http://rssnamespace.org/feedburner/ext/1.0")]
+            [XmlElementAttribute("category", typeof(category), Namespace = "http://search.yahoo.com/mrss/")]
+            [XmlElementAttribute("credit", typeof(credit), Namespace = "http://search.yahoo.com/mrss/")]
+            [XmlElementAttribute("description", typeof(description), Namespace = "http://search.yahoo.com/mrss/")]
+            [XmlElementAttribute("thumbnail", typeof(thumbnail), Namespace = "http://search.yahoo.com/mrss/")]
+            [XmlElementAttribute("category", typeof(category1), Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
+            [XmlElementAttribute("image", typeof(image), Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
+            [XmlElementAttribute("owner", typeof(owner), Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
+            [XmlElementAttribute("link", typeof(link), Namespace = "http://www.w3.org/2005/Atom")]
+            [XmlElementAttribute("image", typeof(rssChannelImage))]
+            [XmlElementAttribute("item", typeof(rssChannelItem))]            
+            [XmlElementAttribute("ttl", typeof(byte))]
             [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
             public object[] Items
             {
@@ -104,7 +128,7 @@ namespace Podcatcher.RssReader
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
+            [XmlElementAttribute("ItemsElementName")]
             [System.Xml.Serialization.XmlIgnoreAttribute()]
             public ItemsChoiceType[] ItemsElementName
             {
@@ -557,7 +581,7 @@ namespace Podcatcher.RssReader
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd", DataType = "time")]
+            [XmlElementAttribute(Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd", DataType = "time")]
             public System.DateTime duration
             {
                 get
@@ -571,7 +595,7 @@ namespace Podcatcher.RssReader
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
+            [XmlElementAttribute(Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
             public string author
             {
                 get
@@ -585,7 +609,7 @@ namespace Podcatcher.RssReader
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
+            [XmlElementAttribute(Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
             public string @explicit
             {
                 get
@@ -599,7 +623,7 @@ namespace Podcatcher.RssReader
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
+            [XmlElementAttribute(Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
             public string summary
             {
                 get
@@ -613,7 +637,7 @@ namespace Podcatcher.RssReader
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
+            [XmlElementAttribute(Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
             public string subtitle
             {
                 get
@@ -653,7 +677,7 @@ namespace Podcatcher.RssReader
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
+            [XmlElementAttribute(Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
             public image image
             {
                 get
@@ -667,7 +691,7 @@ namespace Podcatcher.RssReader
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("author")]
+            [XmlElementAttribute("author")]
             public string author1
             {
                 get
@@ -681,7 +705,7 @@ namespace Podcatcher.RssReader
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://search.yahoo.com/mrss/")]
+            [XmlElementAttribute(Namespace = "http://search.yahoo.com/mrss/")]
             public content content
             {
                 get
