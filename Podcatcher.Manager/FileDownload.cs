@@ -11,6 +11,10 @@ namespace Podcatcher.Manager
 {
     public class FileDownload
     {
+        public delegate void ChunkSavededEventHandler(FileDownload sender, IChunk chunk);
+
+        public event ChunkSavededEventHandler ChunkSaved;
+
         public string SourceLink { get; private set; }
         public string Destination { get; private set; }
 
@@ -47,6 +51,10 @@ namespace Podcatcher.Manager
         public async Task SaveChunk(IChunk chunk)
         {
             await ChunkSaver.SaveFile(Destination, chunk.Start, chunk.Data);
+            if (ChunkSaved != null)
+            {
+                ChunkSaved.Invoke(this, chunk);
+            }
         }
 
         public async Task DownloadAndSaveChunk()
