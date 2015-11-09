@@ -33,8 +33,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PCLStorage, Version=1.0.2.0, Culture=neutral, PublicKeyToken=286fe515a2c35b64, processorArchitecture=MSIL">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\net45\PCLStorage.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions, Version=1.0.2.0, Culture=neutral, PublicKeyToken=286fe515a2c35b64, processorArchitecture=MSIL">
+      <HintPath>..\packages\PCLStorage.1.0.2\lib\net45\PCLStorage.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,11 +65,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CommandLineParser\CommandLineParser.csproj">
       <Project>{5ad8c2d9-57cc-43b3-9260-3da905b4ade8}</Project>
       <Name>CommandLineParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Podcatcher.Domain\Podcatcher.Domain.csproj">
+      <Project>{55431b6b-86dc-4821-b795-65908fe02b67}</Project>
+      <Name>Podcatcher.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Podcatcher.Downloader\Podcatcher.Downloader.csproj">
+      <Project>{7099385b-9787-4b95-b23d-ee83c1287a7a}</Project>
+      <Name>Podcatcher.Downloader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Podcatcher.FileSaver\Podcatcher.FileSaver.csproj">
+      <Project>{4362f986-ce48-430c-b7ab-e74b262c1c19}</Project>
+      <Name>Podcatcher.FileSaver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Podcatcher.Manager\Podcatcher.Manager.csproj">
+      <Project>{de8129c7-de6d-4998-be69-b30af3f8c6b5}</Project>
+      <Name>Podcatcher.Manager</Name>
     </ProjectReference>
     <ProjectReference Include="..\Podcatcher.RssReader\Podcatcher.RssReader.csproj">
       <Project>{606fc136-6ce7-40aa-b3bc-2f2e7b09bbed}</Project>
@@ -60,6 +94,11 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

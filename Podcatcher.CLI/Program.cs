@@ -1,4 +1,6 @@
 ﻿using CommandLineParser;
+using Podcatcher.Manager;
+using Podcatcher.RssReader;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,6 +46,62 @@ namespace Podcatcher.CLI
                     Console.WriteLine(ex.StackTrace);
                 }
             }
+        }
+
+        [ClCommand("rssInfo")]
+        public static void RssInfo(
+            [ClArgs("url")]
+            string url
+            )
+        {
+            var factory = new RssFactory();
+            var rssTask = factory.CreateFromUrl(url);
+            var rss = rssTask.Result;
+            Console.WriteLine("Title: {0}", rss.channel.Title);
+            Console.WriteLine("Author: {0}", rss.channel.Author);
+
+            foreach(var item in rss.channel.Items)
+            {
+                Console.WriteLine(item.title);
+                Console.WriteLine(item.enclosure.url);
+            }
+        }
+
+        [ClCommand("download")]
+        public static void Download(
+            [ClArgs("url")]
+            string url
+            )
+        {
+            var factory = new RssFactory();
+            var rssTask = factory.CreateFromUrl(url);
+            var rss = rssTask.Result;
+            Console.WriteLine("Title: {0}", rss.channel.Title);
+            Console.WriteLine("Author: {0}", rss.channel.Author);
+
+            var cast = rss.channel.Items.FirstOrDefault();
+            if(cast == null)
+            {
+                Console.WriteLine("No file to download.");
+                return;
+            }
+
+            Console.WriteLine("Downloading {0} bytes from {1}.", cast.enclosure.length, cast.enclosure.url);
+
+            var downloader = new FileDownload(cast.enclosure.url, cast.title);
+            downloader.ChunkSaved += Downloader_ChunkSaved;
+            while(!downloader.Complete)
+            {
+                downloader.DownloadAndSaveChunk().Wait();
+            }
+            Console.WriteLine("Download complete.");
+            downloader.GetCompleteFileStream().Wait();
+            Console.WriteLine("File written.");
+        }
+
+        private static void Downloader_ChunkSaved(FileDownload sender, Podcatcher.Domain.IChunk chunk)
+        {
+            Console.WriteLine("Downloaded {0} bytes.", chunk.Length);
         }
     }
 }
