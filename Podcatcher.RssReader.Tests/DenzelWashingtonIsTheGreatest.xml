@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2enclosuresfull.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2enclosuresfull.xsl"?>
+<?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
   <channel>
-    
+
     <title>Denzel Washington is the Greatest Actor of All Time Period</title>
     <link>http://soundcloud.com/denzelisthegreatest</link>
     <pubDate>Thu, 05 Nov 2015 00:41:04 +0000</pubDate>
@@ -12,7 +14,7 @@
     <webMaster>feeds@soundcloud.com (SoundCloud Feeds)</webMaster>
     <description>Comedians W. Kamau Bell &amp; Kevin Avery are absolutely certain of one thing: Denzel Washington is the greatest actor of all time. And every week they will prove it as they talk Denzel with guests, share the latest “Denzel News” and review every Denzel movie in alphabetical order (mostly).</description>
     <itunes:subtitle>Comedians W. Kamau Bell &amp; Kevin Avery are absolutely certain of one thing: Denzel Washington is the greatest actor of all time. And every week they will prove it as they talk Denzel with guests, share the latest “Denzel News” and review every Denzel movie</itunes:subtitle>
-    
+
     <itunes:author>Wolfpop</itunes:author>
     <itunes:explicit>yes</itunes:explicit>
     <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
@@ -21,8 +23,19 @@
       <title>Denzel Washington is...</title>
       <link>http://soundcloud.com/denzelisthegreatest</link>
     </image>
-    
-    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/DenzelWashingtonIsTheGreatest" /><feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="denzelwashingtonisthegreatest" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><media:copyright>Earwolf Media, LLC</media:copyright><media:thumbnail url="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" /><media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Comedy</media:category><itunes:owner><itunes:email>hello@wolfpop.com</itunes:email><itunes:name>Wolfpop</itunes:name></itunes:owner><itunes:category text="Comedy" /><item>
+
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/DenzelWashingtonIsTheGreatest" />
+    <feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="denzelwashingtonisthegreatest" />
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
+    <media:copyright>Earwolf Media, LLC</media:copyright>
+    <media:thumbnail url="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
+    <media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Comedy</media:category>
+    <itunes:owner>
+      <itunes:email>hello@wolfpop.com</itunes:email>
+      <itunes:name>Wolfpop</itunes:name>
+    </itunes:owner>
+    <itunes:category text="Comedy" />
+    <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/231600729</guid>
       <title>52 Power</title>
       <pubDate>Thu, 05 Nov 2015 00:41:04 +0000</pubDate>
@@ -35,7 +48,9 @@
       <description>It's Kamau &amp; Kevin's One Year Denzel-Versary! This week they discuss Denzel Washington's performance as public relations expert Arnold Billings in 1986's Power which earned him the 1987 NAACP Image Award for Outstanding Supporting Actor in a Motion Picture. Plus, they talk about all the great Denzel costumes this past Halloween, dealing with a recent Twitter roll, and an update on Project Greenlight.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/231600729-denzelisthegreatest-52-power.mp3" length="74992298" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/231600729-denzelisthegreatest-52-power.mp3" fileSize="74992298" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/231600729-denzelisthegreatest-52-power.mp3" fileSize="74992298" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/230595615</guid>
       <title>51 Mo' Better Blues Pt. 2 (w/ J. August Richards)</title>
@@ -49,7 +64,9 @@
       <description>Actor J. August Richards of (Charles Gunn in Angel, Deathlok in Marvel’s Agents of S.H.I.E.L.D.) is back to talk Mo' Better Blues with Kevin &amp; Kamau. They'll also cover the latest on Effie Brown in Project Greenlight, "interrupting Denzel," Aaron Sorkin statement saying Denzel could have played Steve Jobs, and BET's "15 Things You Didn't Know about Denzel Washington."</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/230595615-denzelisthegreatest-51-mo-better-blues-pt-2-w-j-august-richards.mp3" length="97880960" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/230595615-denzelisthegreatest-51-mo-better-blues-pt-2-w-j-august-richards.mp3" fileSize="97880960" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/230595615-denzelisthegreatest-51-mo-better-blues-pt-2-w-j-august-richards.mp3" fileSize="97880960" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/229540909</guid>
       <title>50 The Tripod (w/ Vernon Reid)</title>
@@ -63,7 +80,9 @@
       <description>Vernon Reid of Living Colour and Denzealot all-star is back to talk all things Denzel with Kamau &amp; Kevin. They'll discuss how Kamau is causing emotions with his ad reads, why Kevin might be related to past guest Ava DuVernay, 16 Fascinating Facts about Training Day, Star Wars, and of course, Denzel News.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/229540909-denzelisthegreatest-50-the-tripod-w-vernon-reid.mp3" length="100525280" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/229540909-denzelisthegreatest-50-the-tripod-w-vernon-reid.mp3" fileSize="100525280" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/229540909-denzelisthegreatest-50-the-tripod-w-vernon-reid.mp3" fileSize="100525280" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/228481591</guid>
       <title>49 Mississippi Masala (w/ Hari Kondabolu)</title>
@@ -77,7 +96,9 @@
       <description>It's a Totally Biased reunion as stand-up comedian Hari Kondabolu joins Kamau and Kevin this week to discuss Denzel in Mississippi Masala, a 1991 romantic drama film which explores interracial romance between African Americans and Indian Americans. They'll talk about this being a huge Indian American homework movie to Hari, the movie trying to coin "insane to the brains," and a young cool Denzel cementing his sexiness.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/228481591-denzelisthegreatest-49-mississippi-masala-w-hari-kondabolu.mp3" length="84592832" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/228481591-denzelisthegreatest-49-mississippi-masala-w-hari-kondabolu.mp3" fileSize="84592832" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/228481591-denzelisthegreatest-49-mississippi-masala-w-hari-kondabolu.mp3" fileSize="84592832" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/227448801</guid>
       <title>48 Mo' Better Blues (w/ Ava DuVernay)</title>
@@ -91,7 +112,9 @@
       <description>Selma director Ava DuVernay joins Kamau and not Kevin (he was probably busy doing something great since he has everything) to discuss the 1990 Spike Lee directed Denzel film Mo' Better Blues. They talk about this being hands down Denzel's sexiest film, how Mo' Better Blues played a large part of Ava's first summer of independence (alongside her love for milk) during her time at UCLA, and why Out of Time makes Ava's Top 5 Denzel films.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/227448801-denzelisthegreatest-48-mo-better-blues-w-ava-duvernay.mp3" length="71130656" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/227448801-denzelisthegreatest-48-mo-better-blues-w-ava-duvernay.mp3" fileSize="71130656" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/227448801-denzelisthegreatest-48-mo-better-blues-w-ava-duvernay.mp3" fileSize="71130656" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/226391684</guid>
       <title>47 Much Ado About Nothing (w/ Corey Glover)</title>
@@ -105,7 +128,9 @@
       <description>Two-time Grammy award winner Corey Glover of the legendary Living Colour joins W. Kamau Bell and Kevin “Has Everything” Avery to discuss Denzel doing Shakespeare in 1993’s Much Ado About Nothing. They also talk about Corey playing Francis in the 1986 war movie Platoon, the Denzel bop, Corey’s Top 5 Denzel movies, and the one time Denzel asks Corey for hair advice. Plus, Kevin tells us all about taking his mom to the Emmys.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/226391684-denzelisthegreatest-47-much-ado-about-nothing-w-corey-glover.mp3" length="124403120" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/226391684-denzelisthegreatest-47-much-ado-about-nothing-w-corey-glover.mp3" fileSize="124403120" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/226391684-denzelisthegreatest-47-much-ado-about-nothing-w-corey-glover.mp3" fileSize="124403120" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/225337159</guid>
       <title>46 An Evening with Denzel Washington</title>
@@ -114,14 +139,18 @@
       <itunes:duration>01:49:52</itunes:duration>
       <itunes:author>Wolfpop</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>It finally happened. Kevin along with fellow Denzealot J. August Richards attended An Evening with Denzel Washington at the Wallis Annenberg Center for he Performing Arts in Hollywood, CA and witnessed a night that would surely make any Denzealot shed a glory tear. Kevin and Kamau recap the night as well as discuss Kevin’s special and unexpected chat with the greatest actor of all time himself including the special message Denzel had for Kamau.
-</itunes:summary>
+      <itunes:summary>
+        It finally happened. Kevin along with fellow Denzealot J. August Richards attended An Evening with Denzel Washington at the Wallis Annenberg Center for he Performing Arts in Hollywood, CA and witnessed a night that would surely make any Denzealot shed a glory tear. Kevin and Kamau recap the night as well as discuss Kevin’s special and unexpected chat with the greatest actor of all time himself including the special message Denzel had for Kamau.
+      </itunes:summary>
       <itunes:subtitle>It finally happened. Kevin along with fellow Denz…</itunes:subtitle>
-      <description>It finally happened. Kevin along with fellow Denzealot J. August Richards attended An Evening with Denzel Washington at the Wallis Annenberg Center for he Performing Arts in Hollywood, CA and witnessed a night that would surely make any Denzealot shed a glory tear. Kevin and Kamau recap the night as well as discuss Kevin’s special and unexpected chat with the greatest actor of all time himself including the special message Denzel had for Kamau.
-</description>
+      <description>
+        It finally happened. Kevin along with fellow Denzealot J. August Richards attended An Evening with Denzel Washington at the Wallis Annenberg Center for he Performing Arts in Hollywood, CA and witnessed a night that would surely make any Denzealot shed a glory tear. Kevin and Kamau recap the night as well as discuss Kevin’s special and unexpected chat with the greatest actor of all time himself including the special message Denzel had for Kamau.
+      </description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/225337159-denzelisthegreatest-46-catching-up-on-denzel-news.mp3" length="92291264" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/225337159-denzelisthegreatest-46-catching-up-on-denzel-news.mp3" fileSize="92291264" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/225337159-denzelisthegreatest-46-catching-up-on-denzel-news.mp3" fileSize="92291264" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/224250252</guid>
       <title>45 Denzealot J. August Richards</title>
@@ -130,16 +159,22 @@
       <itunes:duration>01:53:43</itunes:duration>
       <itunes:author>Wolfpop</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>Remarkable actor J. August Richards of (Charles Gunn in Angel, Deathlok in Marvel’s Agents of S.H.I.E.L.D.) joins Kevin &amp; Kamau to talk about generalized blackness, barbershop pressure, Denzel’s process, auditioning for Antwone Fisher, his Top 5 Denzel performances, and the Matt Damon situation.
+      <itunes:summary>
+        Remarkable actor J. August Richards of (Charles Gunn in Angel, Deathlok in Marvel’s Agents of S.H.I.E.L.D.) joins Kevin &amp; Kamau to talk about generalized blackness, barbershop pressure, Denzel’s process, auditioning for Antwone Fisher, his Top 5 Denzel performances, and the Matt Damon situation.
 
-Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php</itunes:summary>
+        Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
+      </itunes:summary>
       <itunes:subtitle>Remarkable actor J. August Richards of (Charles G…</itunes:subtitle>
-      <description>Remarkable actor J. August Richards of (Charles Gunn in Angel, Deathlok in Marvel’s Agents of S.H.I.E.L.D.) joins Kevin &amp; Kamau to talk about generalized blackness, barbershop pressure, Denzel’s process, auditioning for Antwone Fisher, his Top 5 Denzel performances, and the Matt Damon situation.
+      <description>
+        Remarkable actor J. August Richards of (Charles Gunn in Angel, Deathlok in Marvel’s Agents of S.H.I.E.L.D.) joins Kevin &amp; Kamau to talk about generalized blackness, barbershop pressure, Denzel’s process, auditioning for Antwone Fisher, his Top 5 Denzel performances, and the Matt Damon situation.
 
-Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php</description>
+        Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
+      </description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/224250252-denzelisthegreatest-45-denzealot-j-august-richards.mp3" length="95519552" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/224250252-denzelisthegreatest-45-denzealot-j-august-richards.mp3" fileSize="95519552" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/224250252-denzelisthegreatest-45-denzealot-j-august-richards.mp3" fileSize="95519552" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/222113982</guid>
       <title>44 Training Day: Redux (w/ Omar Dorsey)</title>
@@ -153,7 +188,9 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <description>Omar Dorsey is back this week to join W. Kamau Bell and “Baby” Kevin Avery as they dive deeper into Training Day in a special episode of Denzel Washington Is the Baddest Mofo on the Planet of All Time Period! They’ll talk about why Denzel’s character Alonzo should be considered Red Velvet Denzel, the Three Wise Men, the tension of the poker table scene, and where would you get a swivel rifle.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/222113982-denzelisthegreatest-44-training-day-redux-w-omar-dorsey.mp3" length="51855313" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/222113982-denzelisthegreatest-44-training-day-redux-w-omar-dorsey.mp3" fileSize="51855313" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/222113982-denzelisthegreatest-44-training-day-redux-w-omar-dorsey.mp3" fileSize="51855313" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/221099246</guid>
       <title>43 Straight Outta Compton (w/ Omar Dorsey)</title>
@@ -167,7 +204,9 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <description>Omar Dorsey of Selma and the most popular guest on the Denzel podcast is back to join W. Kamau Bell and Kevin “Emmy award nominated” Avery to talk all about the latest Black people homework film Straight Outta Compton.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/221099246-denzelisthegreatest-43-straight-outta-compton-w-omar-dorsey.mp3" length="75223708" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/221099246-denzelisthegreatest-43-straight-outta-compton-w-omar-dorsey.mp3" fileSize="75223708" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/221099246-denzelisthegreatest-43-straight-outta-compton-w-omar-dorsey.mp3" fileSize="75223708" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/220067362</guid>
       <title>42 Training Day (w/ Sasheer Zamata)</title>
@@ -181,7 +220,9 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <description>"King Kong ain't got shit on me!" SNL's Sasheer Zamata joins Kevin &amp; Kamau to talk about the Denzel the world wasn’t ready for in 2001’s Training Day. Plus, we have some new Black People Homework and Denzel News!</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/220067362-denzelisthegreatest-42-training-day-w-sasheer-zamata.mp3" length="86682883" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/220067362-denzelisthegreatest-42-training-day-w-sasheer-zamata.mp3" fileSize="86682883" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/220067362-denzelisthegreatest-42-training-day-w-sasheer-zamata.mp3" fileSize="86682883" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/219015135</guid>
       <title>41 Out of Time (w/ Vernon Reid)</title>
@@ -195,7 +236,9 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <description>Vernon Reid of Living Colour and Denzealot all-star returns to the show to talk about Denzel in 2003’s Out of Time: a movie about grown man shit. They cover the Denzel noir genre, Matt Whitlocking it, Chae being the best friend in any Denzel movie, and everything in between.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/219015135-denzelisthegreatest-41-out-of-time-w-vernon-reid.mp3" length="88558983" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/219015135-denzelisthegreatest-41-out-of-time-w-vernon-reid.mp3" fileSize="88558983" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/219015135-denzelisthegreatest-41-out-of-time-w-vernon-reid.mp3" fileSize="88558983" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/218029036</guid>
       <title>40 The Pelican Brief (w/ Michelle Buteau)</title>
@@ -209,7 +252,9 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <description>The hilarious Michelle Buteau joins Kamau &amp; Kevin this week to discuss Denzel in the 1993 legal crime thriller The Pelican Brief.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/218029036-denzelisthegreatest-40-the-pelican-brief-w-michelle-buteau.mp3" length="90170823" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/218029036-denzelisthegreatest-40-the-pelican-brief-w-michelle-buteau.mp3" fileSize="90170823" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/218029036-denzelisthegreatest-40-the-pelican-brief-w-michelle-buteau.mp3" fileSize="90170823" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/216989317</guid>
       <title>39 John David Washington is the Son of the Greatest Actor of All Time Period</title>
@@ -223,7 +268,9 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <description>It’s John David Washington’s birthday (at the time of this recording) and Kevin and Kamau are celebrating! They discuss J.D.W.’s role as Ricky Jerret in HBO’s Ballers as the NFL player who’s trying to clean up his act as well as his Denzelishness qualities. Plus, Kevin and Kamau go through the official Black People and White People Homework lists as compiled by Denzealot Igor Rusinov!</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/216989317-denzelisthegreatest-39-john-david-washington-is-the-son-of-the-greatest-actor-of-all-time-period.mp3" length="67213053" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/216989317-denzelisthegreatest-39-john-david-washington-is-the-son-of-the-greatest-actor-of-all-time-period.mp3" fileSize="67213053" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/216989317-denzelisthegreatest-39-john-david-washington-is-the-son-of-the-greatest-actor-of-all-time-period.mp3" fileSize="67213053" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/215960653</guid>
       <title>38 License To Kill</title>
@@ -237,7 +284,9 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <description>This week W. Kamau Bell and Kevin “Emmy Nominated” Avery discuss everything Denzel in the 1984 made for TV movie License To Kill. They talk about watching it in parts on YouTube, not seeing Denzel until 40 minutes into the film, and some of the great lines delivered by the drunk driver. Plus, Kevin tells us if he was more excited for earning an Emmy nomination for Last Week Tonight or getting that free MacBook from a high-end hotel.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/215960653-denzelisthegreatest-38-license-to-kill.mp3" length="80008128" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/215960653-denzelisthegreatest-38-license-to-kill.mp3" fileSize="80008128" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/215960653-denzelisthegreatest-38-license-to-kill.mp3" fileSize="80008128" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/214947217</guid>
       <title>37 The Preacher's Wife (w/ Phoebe Robinson)</title>
@@ -251,7 +300,9 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <description>The hilarious stand-up Phoebe Robinson of Blaria.com joins Kevin and Kamau in a TV-MA discussion of the 1996 Christmas romantic comedy-drama film starring Denzel and Whitney Houston. They talk about the sleazy looking Lionel Richie appearance, Whitney Houston going to chuuch, and the witty &amp; debonaire Denzel angel. Plus, they break down the Comic-Con first look trailers of Suicide Squad, Batman Vs Superman, and Creed.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/214947217-denzelisthegreatest-37-the-preachers-wife-w-phoebe-robinson.mp3" length="88872883" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/214947217-denzelisthegreatest-37-the-preachers-wife-w-phoebe-robinson.mp3" fileSize="88872883" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/214947217-denzelisthegreatest-37-the-preachers-wife-w-phoebe-robinson.mp3" fileSize="88872883" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/213916897</guid>
       <title>36 The Manchurian Candidate</title>
@@ -260,14 +311,18 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <itunes:duration>00:45:47</itunes:duration>
       <itunes:author>Wolfpop</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>Quite possibly the weirdest movie Denzel has ever done, this week Kevin and Kamau discuss the 2004 political thriller The Manchurian Candidate. 
-</itunes:summary>
+      <itunes:summary>
+        Quite possibly the weirdest movie Denzel has ever done, this week Kevin and Kamau discuss the 2004 political thriller The Manchurian Candidate.
+      </itunes:summary>
       <itunes:subtitle>Quite possibly the weirdest movie Denzel has ever…</itunes:subtitle>
-      <description>Quite possibly the weirdest movie Denzel has ever done, this week Kevin and Kamau discuss the 2004 political thriller The Manchurian Candidate. 
-</description>
+      <description>
+        Quite possibly the weirdest movie Denzel has ever done, this week Kevin and Kamau discuss the 2004 political thriller The Manchurian Candidate.
+      </description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/213916897-denzelisthegreatest-36-the-manchurian-candidate.mp3" length="38388638" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/213916897-denzelisthegreatest-36-the-manchurian-candidate.mp3" fileSize="38388638" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/213916897-denzelisthegreatest-36-the-manchurian-candidate.mp3" fileSize="38388638" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/212906526</guid>
       <title>35 The Hurricane (w/ Dave Zirin)</title>
@@ -281,7 +336,9 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <description>Sports Reporter Dave Zirin of Edge of Sports Radio and sports editor of The Nation joins Kevin &amp; Kamau to discuss the 1999 biographical film The Hurricane. They’ll talk about the real life Rubin “Hurricane” Carter’s thoughts on the film, Denzel’s heartfelt “I’m 50 years old” speech, and Denzel’s greatest in prison scene of all the Denzel in prison scenes. Plus, Dave shares his Top 5 Denzel performances and his Top 5 Denzel Day Changers!</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/212906526-denzelisthegreatest-35-the-hurricane-w-dave-zirin.mp3" length="75940933" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/212906526-denzelisthegreatest-35-the-hurricane-w-dave-zirin.mp3" fileSize="75940933" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/212906526-denzelisthegreatest-35-the-hurricane-w-dave-zirin.mp3" fileSize="75940933" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/211897822</guid>
       <title>34 Ballers and St. Elsewhere</title>
@@ -295,7 +352,9 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <description>In honor of Father’s Day, W. Kamau Bell and Kevin “Richard The Screwdriver” Avery review the first episode of HBO’s Ballers starring Denzel’s son John David Washington. They’ll also take a look at Denzel’s TV debut as they discuss the first episode of St. Elsewhere which begs the question: Did Denzel or his son have the better TV debut? Tune in to find out!</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/211897822-denzelisthegreatest-34-ballers-and-st-elsewhere.mp3" length="52853953" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/211897822-denzelisthegreatest-34-ballers-and-st-elsewhere.mp3" fileSize="52853953" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/211897822-denzelisthegreatest-34-ballers-and-st-elsewhere.mp3" fileSize="52853953" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/210866751</guid>
       <title>33 Man on Fire (w/ Johnny Skourtis)</title>
@@ -309,7 +368,9 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <description>Man on Fire may very well be the ultimate Denzel Washington movie. Kevin &amp; Kamau talk about the wonderful Denzel/Christopher Walken team-up, Denzel becoming the greatest dad in the world, and why the movie is basically The Equalizer in Mexico. They also discuss Rachel Dolezal identifying as black and Kevin’s surprise visit to the Container Store. Plus, they call up friend of the show Johnny Skourtis aka Ralphie from The Equalizer to talk about the the now green-lit sequel to The Equalizer.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/210866751-denzelisthegreatest-33-man-on-fire-w-johnny-skourtis.mp3" length="73666983" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/210866751-denzelisthegreatest-33-man-on-fire-w-johnny-skourtis.mp3" fileSize="73666983" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/210866751-denzelisthegreatest-33-man-on-fire-w-johnny-skourtis.mp3" fileSize="73666983" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/209804701</guid>
       <title>32 Igor Rusinov of Welcome to Denzelishness</title>
@@ -323,7 +384,9 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <description>The man behind Welcome to Denzelishness, Igor Rusinov joins Kamau &amp; Kevin all the way from Russia on a special episode of Denzel Washington Is The Greatest Actor of All Time Period! They’ll get into what lead to him creating the Welcome to Denzelishness website (http://rusinov.me/projects/denzelishness/), what life is like is in Saint Petersburg, and his very strange Top 5 Denzel movie choices. Plus, Kevin &amp; Kamau talk about Denzel’s Penn-State and Dillard commencement speeches and share a couple of Denzel Halloween costume ideas.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/209804701-denzelisthegreatest-32-igor-rusinov-of-welcome-to-denzelishness.mp3" length="53877413" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/209804701-denzelisthegreatest-32-igor-rusinov-of-welcome-to-denzelishness.mp3" fileSize="53877413" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/209804701-denzelisthegreatest-32-igor-rusinov-of-welcome-to-denzelishness.mp3" fileSize="53877413" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/208824484</guid>
       <title>31 Liz of @Denzealots</title>
@@ -337,7 +400,9 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <description>It’s a very special episode of Denzel Washington Is The Greatest Actor of All Time Period as Kevin &amp; Kamau chat with Liz, the woman behind the @Denzealots Twitter account. They’ll get into her early Denzealotry, what drove her to create the @Denzealots Twitter account, and her unique Top 5 Denzel movies. Plus, Kevin &amp; Kamau talk about kid birthday parties and ask listeners what’s the best and worst Denzel dad movie.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/208824484-denzelisthegreatest-31-liz-of-denzealots.mp3" length="52104973" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/208824484-denzelisthegreatest-31-liz-of-denzealots.mp3" fileSize="52104973" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/208824484-denzelisthegreatest-31-liz-of-denzealots.mp3" fileSize="52104973" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/207603939</guid>
       <title>30 Inside Man: LIVE from Union Hall</title>
@@ -351,7 +416,9 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <description>Thanks to a special Denzealot, the first LIVE episode of Denzel Washington Is The Greatest Actor of All Time Period is now available! Recorded LIVE from Union Hall in Brooklyn, New York, Kamau &amp; Kevin welcome Jozen Cummings of the New York Post, Tony award winner James Monroe Iglehart, and comedian Hasan Minhaj of The Daily Show to talk about Kevin’s new haircut, the Uncle Denzel meme, and of course Inside Man.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/207603939-denzelisthegreatest-30-inside-man-live-from-union-hall.mp3" length="101152578" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/207603939-denzelisthegreatest-30-inside-man-live-from-union-hall.mp3" fileSize="101152578" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/207603939-denzelisthegreatest-30-inside-man-live-from-union-hall.mp3" fileSize="101152578" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/206500658</guid>
       <title>29 The Crossover (w/ Vernon Reid)</title>
@@ -365,7 +432,9 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <description>Living Colour’s own Vernon Reid joins Kamau &amp; Kevin for a special Marvel crossover edition of The Field Negro Guide to Arts and Culture and Denzel Washington Is The Greatest Actor of All Time Period. They’ll discuss the Sam Raimi Spiderman film trilogy, the Batman vs. Superman trailer feeling like it was fan made, and actors making bad choices. Then, Vernon tells us how the King Kong scene in Training Day became instantly iconic, why Inside Man is possible Spike Lee’s best work as a director, and what bothers him about Mo’ Better Blues as he shares his Top 5 Denzel Movies.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/206500658-denzelisthegreatest-29-the-crossover-w-vernon-reid.mp3" length="56459058" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/206500658-denzelisthegreatest-29-the-crossover-w-vernon-reid.mp3" fileSize="56459058" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/206500658-denzelisthegreatest-29-the-crossover-w-vernon-reid.mp3" fileSize="56459058" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/205398622</guid>
       <title>28 Denzealot Sam West</title>
@@ -379,7 +448,9 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <description>Denzealot Sam West joins Kamau &amp; Kevin to talk about the live #Denzel show at Union Hall, how Denzel’s leg sweep in The Mighty Quinn inspired him to become an actor, Spike Lee’s tracking shots, and how White people will react to the live version of The Wiz. Plus, Sam shares his Top 5 Favorite Denzel films of All Time and his thoughts on the future of the podcast.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/205398622-denzelisthegreatest-28-denzealot-sam-west.mp3" length="45747768" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/205398622-denzelisthegreatest-28-denzealot-sam-west.mp3" fileSize="45747768" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/205398622-denzelisthegreatest-28-denzealot-sam-west.mp3" fileSize="45747768" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/204308290</guid>
       <title>27 John Q (w/ Kathryn P. McMurphy, Justin X)</title>
@@ -388,16 +459,22 @@ Livestream An Evening with Denzel Washington here: http://thewallis.org/live.php
       <itunes:duration>01:07:15</itunes:duration>
       <itunes:author>Wolfpop</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>Kathryn P. McMurphy, the Patron Saint of #Denzealots returns this week to join Kamau &amp; Kevin as they discuss the 2002 thriller John Q. They talk about knowing that things are going to go bad whenever you see Denzel having a good time with family, subtle hints of Training Day Denzel in the movie, and why Denzel gets shot better than any other actor in Hollywood. Plus, Justin X aka Black Judgement stops by to go through the list of Black People Homework and White People Homework movies and the #uncledenzel meme is addressed.
+      <itunes:summary>
+        Kathryn P. McMurphy, the Patron Saint of #Denzealots returns this week to join Kamau &amp; Kevin as they discuss the 2002 thriller John Q. They talk about knowing that things are going to go bad whenever you see Denzel having a good time with family, subtle hints of Training Day Denzel in the movie, and why Denzel gets shot better than any other actor in Hollywood. Plus, Justin X aka Black Judgement stops by to go through the list of Black People Homework and White People Homework movies and the #uncledenzel meme is addressed.
 
-New York: Get your tickets now for a LIVE episode of Denzel Washington Is The Greatest Actor of All Time Period at Union Hall in Brooklyn on Monday, May 11th! Tix: https://www.ticketfly.com/purchase/event/841103</itunes:summary>
+        New York: Get your tickets now for a LIVE episode of Denzel Washington Is The Greatest Actor of All Time Period at Union Hall in Brooklyn on Monday, May 11th! Tix: https://www.ticketfly.com/purchase/event/841103
+      </itunes:summary>
       <itunes:subtitle>Kathryn P. McMurphy, the Patron Saint of #Denzeal…</itunes:subtitle>
-      <description>Kathryn P. McMurphy, the Patron Saint of #Denzealots returns this week to join Kamau &amp; Kevin as they discuss the 2002 thriller John Q. They talk about knowing that things are going to go bad whenever you see Denzel having a good time with family, subtle hints of Training Day Denzel in the movie, and why Denzel gets shot better than any other actor in Hollywood. Plus, Justin X aka Black Judgement stops by to go through the list of Black People Homework and White People Homework movies and the #uncledenzel meme is addressed.
+      <description>
+        Kathryn P. McMurphy, the Patron Saint of #Denzealots returns this week to join Kamau &amp; Kevin as they discuss the 2002 thriller John Q. They talk about knowing that things are going to go bad whenever you see Denzel having a good time with family, subtle hints of Training Day Denzel in the movie, and why Denzel gets shot better than any other actor in Hollywood. Plus, Justin X aka Black Judgement stops by to go through the list of Black People Homework and White People Homework movies and the #uncledenzel meme is addressed.
 
-New York: Get your tickets now for a LIVE episode of Denzel Washington Is The Greatest Actor of All Time Period at Union Hall in Brooklyn on Monday, May 11th! Tix: https://www.ticketfly.com/purchase/event/841103</description>
+        New York: Get your tickets now for a LIVE episode of Denzel Washington Is The Greatest Actor of All Time Period at Union Hall in Brooklyn on Monday, May 11th! Tix: https://www.ticketfly.com/purchase/event/841103
+      </description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/204308290-denzelisthegreatest-27-john-q-w-kathryn-p-mcmurphy-justin-x.mp3" length="56386788" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/204308290-denzelisthegreatest-27-john-q-w-kathryn-p-mcmurphy-justin-x.mp3" fileSize="56386788" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/204308290-denzelisthegreatest-27-john-q-w-kathryn-p-mcmurphy-justin-x.mp3" fileSize="56386788" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/203244429</guid>
       <title>26 Heart Condition (w/ Kathryn P. McMurphy)</title>
@@ -406,20 +483,26 @@ New York: Get your tickets now for a LIVE episode of Denzel Washington Is The Gr
       <itunes:duration>01:32:55</itunes:duration>
       <itunes:author>Wolfpop</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>Kathryn P. McMurphy is back by popular demand to discuss ghost Denzel in the 1990 fantasy comedy Heart Condition. They talk about why there are no ghost special effects in a ghost movie, the Hip-Hop club simply called Hip-Hop, who would ever say “what the deuce,” and why Denzel stayed away from comedy after the movie bombed. Plus, we got some Black People Homework news and some big time Denzel News! 
+      <itunes:summary>
+        Kathryn P. McMurphy is back by popular demand to discuss ghost Denzel in the 1990 fantasy comedy Heart Condition. They talk about why there are no ghost special effects in a ghost movie, the Hip-Hop club simply called Hip-Hop, who would ever say “what the deuce,” and why Denzel stayed away from comedy after the movie bombed. Plus, we got some Black People Homework news and some big time Denzel News!
 
-New York: Get your tickets now for a LIVE episode of Denzel Washington Is The Greatest Actor of All Time Period at Union Hall in Brooklyn on Monday, May 11th! 
+        New York: Get your tickets now for a LIVE episode of Denzel Washington Is The Greatest Actor of All Time Period at Union Hall in Brooklyn on Monday, May 11th!
 
-Tix: https://www.ticketfly.com/purchase/event/841103</itunes:summary>
+        Tix: https://www.ticketfly.com/purchase/event/841103
+      </itunes:summary>
       <itunes:subtitle>Kathryn P. McMurphy is back by popular demand to …</itunes:subtitle>
-      <description>Kathryn P. McMurphy is back by popular demand to discuss ghost Denzel in the 1990 fantasy comedy Heart Condition. They talk about why there are no ghost special effects in a ghost movie, the Hip-Hop club simply called Hip-Hop, who would ever say “what the deuce,” and why Denzel stayed away from comedy after the movie bombed. Plus, we got some Black People Homework news and some big time Denzel News! 
+      <description>
+        Kathryn P. McMurphy is back by popular demand to discuss ghost Denzel in the 1990 fantasy comedy Heart Condition. They talk about why there are no ghost special effects in a ghost movie, the Hip-Hop club simply called Hip-Hop, who would ever say “what the deuce,” and why Denzel stayed away from comedy after the movie bombed. Plus, we got some Black People Homework news and some big time Denzel News!
 
-New York: Get your tickets now for a LIVE episode of Denzel Washington Is The Greatest Actor of All Time Period at Union Hall in Brooklyn on Monday, May 11th! 
+        New York: Get your tickets now for a LIVE episode of Denzel Washington Is The Greatest Actor of All Time Period at Union Hall in Brooklyn on Monday, May 11th!
 
-Tix: https://www.ticketfly.com/purchase/event/841103</description>
+        Tix: https://www.ticketfly.com/purchase/event/841103
+      </description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/203244429-denzelisthegreatest-26-heart-condition-w-kathryn-p-mcmurphy.mp3" length="77897698" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/203244429-denzelisthegreatest-26-heart-condition-w-kathryn-p-mcmurphy.mp3" fileSize="77897698" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/203244429-denzelisthegreatest-26-heart-condition-w-kathryn-p-mcmurphy.mp3" fileSize="77897698" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/202138642</guid>
       <title>25 Twitter Show Pt. 2</title>
@@ -428,20 +511,24 @@ Tix: https://www.ticketfly.com/purchase/event/841103</description>
       <itunes:duration>00:26:27</itunes:duration>
       <itunes:author>Wolfpop</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>Kevin &amp; Kamau continue to answer all the questions and comments sent in by Denzealots in part 2 of this week’s special Twitter episode, including Kevin's pronunciation of “Sasquatch”, why Denzel refused the Kurt Russell role in Furious 7, who will be Denzel’s successor, and more. Plus, there’s a new Kevin Avery edition of the Denzel bingo card!
+      <itunes:summary>
+        Kevin &amp; Kamau continue to answer all the questions and comments sent in by Denzealots in part 2 of this week’s special Twitter episode, including Kevin's pronunciation of “Sasquatch”, why Denzel refused the Kurt Russell role in Furious 7, who will be Denzel’s successor, and more. Plus, there’s a new Kevin Avery edition of the Denzel bingo card!
 
 
-New York: Get your tickets now for a LIVE episode of Denzel Washington Is The Greatest Actor of All Time Period at Union Hall in Brooklyn on Monday, May 11th! Tix: https://www.ticketfly.com/purchase/event/841103
-</itunes:summary>
+        New York: Get your tickets now for a LIVE episode of Denzel Washington Is The Greatest Actor of All Time Period at Union Hall in Brooklyn on Monday, May 11th! Tix: https://www.ticketfly.com/purchase/event/841103
+      </itunes:summary>
       <itunes:subtitle>Kevin &amp; Kamau continue to answer all the question…</itunes:subtitle>
-      <description>Kevin &amp; Kamau continue to answer all the questions and comments sent in by Denzealots in part 2 of this week’s special Twitter episode, including Kevin's pronunciation of “Sasquatch”, why Denzel refused the Kurt Russell role in Furious 7, who will be Denzel’s successor, and more. Plus, there’s a new Kevin Avery edition of the Denzel bingo card!
+      <description>
+        Kevin &amp; Kamau continue to answer all the questions and comments sent in by Denzealots in part 2 of this week’s special Twitter episode, including Kevin's pronunciation of “Sasquatch”, why Denzel refused the Kurt Russell role in Furious 7, who will be Denzel’s successor, and more. Plus, there’s a new Kevin Avery edition of the Denzel bingo card!
 
 
-New York: Get your tickets now for a LIVE episode of Denzel Washington Is The Greatest Actor of All Time Period at Union Hall in Brooklyn on Monday, May 11th! Tix: https://www.ticketfly.com/purchase/event/841103
-</description>
+        New York: Get your tickets now for a LIVE episode of Denzel Washington Is The Greatest Actor of All Time Period at Union Hall in Brooklyn on Monday, May 11th! Tix: https://www.ticketfly.com/purchase/event/841103
+      </description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/202138642-denzelisthegreatest-25-twitter-show-pt-2.mp3" length="22174973" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/202138642-denzelisthegreatest-25-twitter-show-pt-2.mp3" fileSize="22174973" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/202138642-denzelisthegreatest-25-twitter-show-pt-2.mp3" fileSize="22174973" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/201156174</guid>
       <title>24 Twitter Show Pt. 1</title>
@@ -455,7 +542,9 @@ New York: Get your tickets now for a LIVE episode of Denzel Washington Is The Gr
       <description>Kevin &amp; Kamau answer your questions and comments, and discuss the various Denzelish tweets you guys have sent in on Part 1 of this week’s special Twitter episode! They talk about who they consider the 2nd Greatest Actor of All Time Period, discuss Denzel's view on how a role can be defining for an actor’s career, and share Kevin’s thoughts on the surprising Last Week Tonight Edward Snowden interview.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/201156174-denzelisthegreatest-24-twitter-show-pt-1.mp3" length="35830316" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/201156174-denzelisthegreatest-24-twitter-show-pt-1.mp3" fileSize="35830316" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/201156174-denzelisthegreatest-24-twitter-show-pt-1.mp3" fileSize="35830316" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/199952056</guid>
       <title>23 Hard Lessons: The George McKenna Story (w/ Bucky Sinister)</title>
@@ -464,16 +553,22 @@ New York: Get your tickets now for a LIVE episode of Denzel Washington Is The Gr
       <itunes:duration>01:17:26</itunes:duration>
       <itunes:author>Wolfpop</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>Kevin and Kamau are thrilled to be joined by comedian/poet/author Bucky Sinister to talk about Denzel as a high school principal in the 1986 TV movie Hard Lessons: The George McKenna Story. They talk about Denzel playing the role of the principal who yells at his students into success, how the movie felt like it might have been pitched as a TV show, the dump truck man and his son, and the weirdly edited basketball montage. Plus, Denzel News!
+      <itunes:summary>
+        Kevin and Kamau are thrilled to be joined by comedian/poet/author Bucky Sinister to talk about Denzel as a high school principal in the 1986 TV movie Hard Lessons: The George McKenna Story. They talk about Denzel playing the role of the principal who yells at his students into success, how the movie felt like it might have been pitched as a TV show, the dump truck man and his son, and the weirdly edited basketball montage. Plus, Denzel News!
 
-Pre-order Bucky’s novel Black Hole on Amazon now: http://www.amazon.com/Black-Hole-Novel-Bucky-Sinister/dp/1593766076</itunes:summary>
+        Pre-order Bucky’s novel Black Hole on Amazon now: http://www.amazon.com/Black-Hole-Novel-Bucky-Sinister/dp/1593766076
+      </itunes:summary>
       <itunes:subtitle>Kevin and Kamau are thrilled to be joined by come…</itunes:subtitle>
-      <description>Kevin and Kamau are thrilled to be joined by comedian/poet/author Bucky Sinister to talk about Denzel as a high school principal in the 1986 TV movie Hard Lessons: The George McKenna Story. They talk about Denzel playing the role of the principal who yells at his students into success, how the movie felt like it might have been pitched as a TV show, the dump truck man and his son, and the weirdly edited basketball montage. Plus, Denzel News!
+      <description>
+        Kevin and Kamau are thrilled to be joined by comedian/poet/author Bucky Sinister to talk about Denzel as a high school principal in the 1986 TV movie Hard Lessons: The George McKenna Story. They talk about Denzel playing the role of the principal who yells at his students into success, how the movie felt like it might have been pitched as a TV show, the dump truck man and his son, and the weirdly edited basketball montage. Plus, Denzel News!
 
-Pre-order Bucky’s novel Black Hole on Amazon now: http://www.amazon.com/Black-Hole-Novel-Bucky-Sinister/dp/1593766076</description>
+        Pre-order Bucky’s novel Black Hole on Amazon now: http://www.amazon.com/Black-Hole-Novel-Bucky-Sinister/dp/1593766076
+      </description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/199952056-denzelisthegreatest-23-hard-lessons-the-george-mckenna-story-w-bucky-sinister.mp3" length="64923408" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/199952056-denzelisthegreatest-23-hard-lessons-the-george-mckenna-story-w-bucky-sinister.mp3" fileSize="64923408" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/199952056-denzelisthegreatest-23-hard-lessons-the-george-mckenna-story-w-bucky-sinister.mp3" fileSize="64923408" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/198831637</guid>
       <title>22 He Got Game (w/ Omar Dorsey)</title>
@@ -487,7 +582,9 @@ Pre-order Bucky’s novel Black Hole on Amazon now: http://www.amazon.com/Black-
       <description>Kevin and Kamau are beyond excited to welcome actor and hero Omar Dorsey of Selma to the show to talk about the 1998 Spike Lee film He Got Game. They talk about Rosario Dawson being a vampire, Ray Allen being the perfect blank slate opposite Denzel’s bad-ass loser character, and Denzel walking away to KRS-ONE after delivering a fast neck blow. Plus, Omar tells us all about his weekend trip to Oprah’s house and we got some new Denzel News!</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/198831637-denzelisthegreatest-22-he-got-game-w-omar-dorsey.mp3" length="65230373" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/198831637-denzelisthegreatest-22-he-got-game-w-omar-dorsey.mp3" fileSize="65230373" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/198831637-denzelisthegreatest-22-he-got-game-w-omar-dorsey.mp3" fileSize="65230373" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/197655038</guid>
       <title>21 Johnny Skourtis aka Ralphie from the Equalizer</title>
@@ -501,7 +598,9 @@ Pre-order Bucky’s novel Black Hole on Amazon now: http://www.amazon.com/Black-
       <description>This is a big one. Kevin and Kamau are super excited to sit down with actor and stand-up comedian Johnny Skourtis. Johnny talks about acting alongside Denzel in The Equalizer. They talk about how Johnny shed a Glory tear when he found out he got the role of Ralphie, Denzel tickling Johnny when they first met, and how he and director Antoine Fuqua fanboyed about Denzel... in front of Denzel.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/197655038-denzelisthegreatest-21-ralphie-from-the-equalizer-w-johnny-skourtis.mp3" length="53233188" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/197655038-denzelisthegreatest-21-ralphie-from-the-equalizer-w-johnny-skourtis.mp3" fileSize="53233188" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/197655038-denzelisthegreatest-21-ralphie-from-the-equalizer-w-johnny-skourtis.mp3" fileSize="53233188" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/196616382</guid>
       <title>20 Ricochet (w/ Doug Benson)</title>
@@ -515,7 +614,9 @@ Pre-order Bucky’s novel Black Hole on Amazon now: http://www.amazon.com/Black-
       <description>Our favorite movie lover, Doug Benson of Doug Loves Movies is back to join Kevin &amp; Kamau to discuss an alternate universe Denzel in the 1992 action film Ricochet. They talk about this movie being Denzel's Die Hard, Denzel's rock hard abs, John Lithgow's amazing hair, and Denzel’s weirdest noise ever.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/196616382-denzelisthegreatest-20-ricochet-w-doug-benson.mp3" length="43384393" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/196616382-denzelisthegreatest-20-ricochet-w-doug-benson.mp3" fileSize="43384393" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/196616382-denzelisthegreatest-20-ricochet-w-doug-benson.mp3" fileSize="43384393" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/195468723</guid>
       <title>19 Death Wish</title>
@@ -524,16 +625,22 @@ Pre-order Bucky’s novel Black Hole on Amazon now: http://www.amazon.com/Black-
       <itunes:duration>00:48:38</itunes:duration>
       <itunes:author>Wolfpop</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>This week Kevin “One Scene Watcher” Avery &amp; W. Kamau “Innovative Podcaster” Bell discuss Denzel’s film debut in 1974‘s Death Wish. They talk about how the movie is basically a low rent version of The Punisher, Jeff Goldblum playing one of the thugs in the trigger warning scene, why Samuel L. Jackson doesn’t have to run if he doesn’t want to, and the 54 second scene that Denzel is in. Plus, they discuss how Denzel Washington Is the Greatest Brand Strategist of All Time, the Centric network’s Ladies Love Denzel weekend, and Denzel’s book “A Hand to Guide Me.”
+      <itunes:summary>
+        This week Kevin “One Scene Watcher” Avery &amp; W. Kamau “Innovative Podcaster” Bell discuss Denzel’s film debut in 1974‘s Death Wish. They talk about how the movie is basically a low rent version of The Punisher, Jeff Goldblum playing one of the thugs in the trigger warning scene, why Samuel L. Jackson doesn’t have to run if he doesn’t want to, and the 54 second scene that Denzel is in. Plus, they discuss how Denzel Washington Is the Greatest Brand Strategist of All Time, the Centric network’s Ladies Love Denzel weekend, and Denzel’s book “A Hand to Guide Me.”
 
-Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washington/dp/0696230496</itunes:summary>
+        Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washington/dp/0696230496
+      </itunes:summary>
       <itunes:subtitle>This week Kevin “One Scene Watcher” Avery &amp; W. Ka…</itunes:subtitle>
-      <description>This week Kevin “One Scene Watcher” Avery &amp; W. Kamau “Innovative Podcaster” Bell discuss Denzel’s film debut in 1974‘s Death Wish. They talk about how the movie is basically a low rent version of The Punisher, Jeff Goldblum playing one of the thugs in the trigger warning scene, why Samuel L. Jackson doesn’t have to run if he doesn’t want to, and the 54 second scene that Denzel is in. Plus, they discuss how Denzel Washington Is the Greatest Brand Strategist of All Time, the Centric network’s Ladies Love Denzel weekend, and Denzel’s book “A Hand to Guide Me.”
+      <description>
+        This week Kevin “One Scene Watcher” Avery &amp; W. Kamau “Innovative Podcaster” Bell discuss Denzel’s film debut in 1974‘s Death Wish. They talk about how the movie is basically a low rent version of The Punisher, Jeff Goldblum playing one of the thugs in the trigger warning scene, why Samuel L. Jackson doesn’t have to run if he doesn’t want to, and the 54 second scene that Denzel is in. Plus, they discuss how Denzel Washington Is the Greatest Brand Strategist of All Time, the Centric network’s Ladies Love Denzel weekend, and Denzel’s book “A Hand to Guide Me.”
 
-Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washington/dp/0696230496</description>
+        Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washington/dp/0696230496
+      </description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/195468723-denzelisthegreatest-19-death-wish.mp3" length="40770993" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/195468723-denzelisthegreatest-19-death-wish.mp3" fileSize="40770993" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/195468723-denzelisthegreatest-19-death-wish.mp3" fileSize="40770993" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/194321050</guid>
       <title>18 The Great Debaters</title>
@@ -547,7 +654,9 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <description>This week Kevin “Shaq Album Collector” Avery and W. Kamau Bell talk about Denzel’s 2nd directorial venture, 2007’s The Great Debaters. They talk about how Denzel made this movie to be Black people homework, this being Denzel’s Indiana Jones role, learning that a dance card was a real thing, and Denzel vs. Forest Whitaker. Plus, they discuss America's new favorite game: Denzel Washington Is The Greatest Actor of All Time Period Bingo.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/194321050-denzelisthegreatest-18-the-great-debaters.mp3" length="72879678" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/194321050-denzelisthegreatest-18-the-great-debaters.mp3" fileSize="72879678" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/194321050-denzelisthegreatest-18-the-great-debaters.mp3" fileSize="72879678" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/193118023</guid>
       <title>17 Glory</title>
@@ -561,7 +670,9 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <description>Finally it's Glory day! Kevin “Glory tear” Avery &amp; Kamau are excited to get to tackle an iconic Denzel film, 1989‘s Glory. It's the movie that won Denzel his first Oscar. And it's the movie that taught Kamau that things don't always work out for black people in movies.They talk about how Matthew Broderick in the movie is like Ferris Bueller being thrown into the Civil War, Morgan Freeman kicking ass, and of course they discuss the most referenced Denzel moment in the history of their podcast, the iconic Glory tear scene.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/193118023-denzelisthegreatest-17-glory.mp3" length="67911663" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/193118023-denzelisthegreatest-17-glory.mp3" fileSize="67911663" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/193118023-denzelisthegreatest-17-glory.mp3" fileSize="67911663" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/191896938</guid>
       <title>16 For Queen and Country</title>
@@ -575,7 +686,9 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <description>WGA award winner Kevin &amp; and no award winner Kamau travel to the mean streets in London for the "lost Denzel film" For Queen and Country. They discuss how the movie makes London in the 80's look like Alabama in the 50's, break down Denzel's British accent, and witness the most 80s drug deal of all time. And in Denzel News: Is Denzel actually going to be on Empire?</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/191896938-denzelisthegreatest-16-for-queen-and-country.mp3" length="53600378" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/191896938-denzelisthegreatest-16-for-queen-and-country.mp3" fileSize="53600378" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/191896938-denzelisthegreatest-16-for-queen-and-country.mp3" fileSize="53600378" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/190727425</guid>
       <title>15 Fallen (w/ Aisha Harris)</title>
@@ -589,7 +702,9 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <description>Slate staff writer Aisha Harris joins Kevin &amp; Kamau to discuss the 1998 fantasy action film Fallen. They talk about why you can call this movie Se7enish, Denzel chewing like a badass throughout the movie, Denzel squaring off with the Devil, and why Denzel asks the nun on the bus to define apocalypse. Plus, Aisha shares her Top 5 Denzel movies and explains what lead her to write her Slate article “How Do you Solve a Problem Like Denzel?” which you can read right here: http://www.slate.com/articles/arts/culturebox/2014/09/denzel_washington_repeats_himself_in_the_equalizer_how_he_can_save_his_career.html</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/190727425-denzelisthegreatest-15-fallen-w-aisha-harris.mp3" length="50463568" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/190727425-denzelisthegreatest-15-fallen-w-aisha-harris.mp3" fileSize="50463568" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/190727425-denzelisthegreatest-15-fallen-w-aisha-harris.mp3" fileSize="50463568" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/189538671</guid>
       <title>14 Twitter Chat</title>
@@ -603,7 +718,9 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <description>This week it's a special episode dedicated to the Denzealots as Kamau &amp; Kevin take to Twitter and talk about all the great Denzelish stuff you guys have sent us online, how the Denzealots had Kevin’s back for the MacBook Air story, the future of Black People Homework, and more. Plus, Kamau shares why the end of days might be upon us. Read all about Kamau’s experience over at his website http://www.wkamaubell.com/</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/189538671-denzelisthegreatest-14-twitter-chat.mp3" length="55875058" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/189538671-denzelisthegreatest-14-twitter-chat.mp3" fileSize="55875058" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/189538671-denzelisthegreatest-14-twitter-chat.mp3" fileSize="55875058" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/188436810</guid>
       <title>13 Flight (w/ Doug Benson)</title>
@@ -617,7 +734,9 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <description>Everybody's favorite movie lover, Doug Benson (of Doug Loves Movies) joins Kevin &amp; Kamau to discuss the 2012 Robert Zemeckis directed film Flight. They talk about Denzel reuniting with co-stars from his past films including Don Cheadle, John Goodman, and Bruce Greenwood, Denzel managing to make horrible things look cool, the most wrecked hotel in the history of all time, and why the final scene feels like Denzel wrote it himself. Plus, a quick update on the story about Quentin Tarantino visiting the set of Crimson Tide!</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/188436810-denzelisthegreatest-13-flight-w-doug-benson.mp3" length="60886143" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/188436810-denzelisthegreatest-13-flight-w-doug-benson.mp3" fileSize="60886143" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/188436810-denzelisthegreatest-13-flight-w-doug-benson.mp3" fileSize="60886143" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/187282221</guid>
       <title>12 Devil in a Blue Dress (w/ Kathryn P. McMurphy)</title>
@@ -631,7 +750,9 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <description>Special guest Kathryn P. McMurphy returns to discuss the 1995 neo-noir mystery Devil in a Blue Dress with Kevin &amp; Kamau. They talk about Denzel passing the ball to Don Cheadle, try to figure out the deal with that guy cutting up all the trees in the movie, and get into the sexiest Denzel moment in film history. Plus, a quick update on Carbon Copy!</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/187282221-denzelisthegreatest-12-devil-in-a-blue-dress-w-kathryn-p-mcmurphy.mp3" length="57287243" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/187282221-denzelisthegreatest-12-devil-in-a-blue-dress-w-kathryn-p-mcmurphy.mp3" fileSize="57287243" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/187282221-denzelisthegreatest-12-devil-in-a-blue-dress-w-kathryn-p-mcmurphy.mp3" fileSize="57287243" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/186126553</guid>
       <title>11 Deja Vu (w/ Kathryn P. McMurphy)</title>
@@ -640,14 +761,18 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <itunes:duration>01:11:49</itunes:duration>
       <itunes:author>Wolfpop</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>It’s a Siskel and Negro Podcast reunion this week as W. Kamau Bell &amp; Kevin Avery are joined by their former co-host Kathryn P. McMurphy to discuss the 2006 action thriller Deja Vu. They talk time-travel, why Denzel almost never "does the grown folk" in his movies, and Denzel's "Explain it to me like a 4-year-old" to the list of Denzelishness. Plus, Denzel news!
-</itunes:summary>
+      <itunes:summary>
+        It’s a Siskel and Negro Podcast reunion this week as W. Kamau Bell &amp; Kevin Avery are joined by their former co-host Kathryn P. McMurphy to discuss the 2006 action thriller Deja Vu. They talk time-travel, why Denzel almost never "does the grown folk" in his movies, and Denzel's "Explain it to me like a 4-year-old" to the list of Denzelishness. Plus, Denzel news!
+      </itunes:summary>
       <itunes:subtitle>It’s a Siskel and Negro Podcast reunion this week…</itunes:subtitle>
-      <description>It’s a Siskel and Negro Podcast reunion this week as W. Kamau Bell &amp; Kevin Avery are joined by their former co-host Kathryn P. McMurphy to discuss the 2006 action thriller Deja Vu. They talk time-travel, why Denzel almost never "does the grown folk" in his movies, and Denzel's "Explain it to me like a 4-year-old" to the list of Denzelishness. Plus, Denzel news!
-</description>
+      <description>
+        It’s a Siskel and Negro Podcast reunion this week as W. Kamau Bell &amp; Kevin Avery are joined by their former co-host Kathryn P. McMurphy to discuss the 2006 action thriller Deja Vu. They talk time-travel, why Denzel almost never "does the grown folk" in his movies, and Denzel's "Explain it to me like a 4-year-old" to the list of Denzelishness. Plus, Denzel news!
+      </description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/186126553-denzelisthegreatest-11-deja-vu-w-kathryn-p-mcmurphy.mp3" length="60207243" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/186126553-denzelisthegreatest-11-deja-vu-w-kathryn-p-mcmurphy.mp3" fileSize="60207243" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/186126553-denzelisthegreatest-11-deja-vu-w-kathryn-p-mcmurphy.mp3" fileSize="60207243" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/185005179</guid>
       <title>10 Cry Freedom</title>
@@ -661,7 +786,9 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <description>This week W. Kamau Bell &amp; Kevin Avery discuss the 1987 British drama film Cry Freedom. They’ll talk about how Kevin fell asleep during the movie, Denzel’s character being assassinated by the police halfway through, black stories told through white america, Denzel gearing up for Malcolm X with his performance as black activist Steve Biko, and Denzel showing off his dance moves. Also, they speak on Kevin getting a special Christmas present from the Hotel Nikko and Denzel being in the remake of The Magnificent Seven in another edition of Denzel News.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/185005179-denzelisthegreatest-10-cry-freedom.mp3" length="44997328" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/185005179-denzelisthegreatest-10-cry-freedom.mp3" fileSize="44997328" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/185005179-denzelisthegreatest-10-cry-freedom.mp3" fileSize="44997328" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/183962551</guid>
       <title>9 A Soldier's Play (w/ David Alan Grier)</title>
@@ -675,7 +802,9 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <description>Start the new year with W. Kamau Bell, Kevin Avery and special guest David Alan Grier as they discuss A Soldier’s Play. They’ll talk about how David joined the cast of A Soldier’s Play, Samuel L. Jackson running the dressing room, Denzel’s acting process during the filming of A Soldier’s Story, and the time Denzel came to the set of Boomerang in character as Malcolm X. Plus, everyone shares their thoughts on some Denzel news that has been leaked due to the Sony hack.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/183962551-denzelisthegreatest-9-a-soldiers-play-w-david-alan-grier.mp3" length="49973738" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/183962551-denzelisthegreatest-9-a-soldiers-play-w-david-alan-grier.mp3" fileSize="49973738" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/183962551-denzelisthegreatest-9-a-soldiers-play-w-david-alan-grier.mp3" fileSize="49973738" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/182938390</guid>
       <title>8 Crimson Tide</title>
@@ -689,7 +818,9 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <description>Merry Christmas Denzealots! W. Kamau Bell &amp; Kevin Avery are in the studio together for the first time to discuss the 1995 submarine film Crimson Tide, and to celebrate Denzel's (and Kevin's) birthday! They’ll talk about Kevin’s love affair with submarine movies, the non-stop gun cocking in this film, Denzel going full blerd during a Silver Surfer argument, and Denzel going toe to toe with America's Michael Caine, the legendary Gene Hackman.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/182938390-denzelisthegreatest-8-crimson-tide.mp3" length="64071859" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/182938390-denzelisthegreatest-8-crimson-tide.mp3" fileSize="64071859" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/182938390-denzelisthegreatest-8-crimson-tide.mp3" fileSize="64071859" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/182031585</guid>
       <title>7 Courage Under Fire</title>
@@ -703,7 +834,9 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <description>This week W. Kamau Bell &amp; Kevin Avery discuss the 1996 film Courage Under Fire. They’ll talk about Denzel’s bad high top fade, Lou Diamond Phillips briefly making Kamau gay, Meg Ryan’s badassery, and Denzel’s double Glory tear. Plus, they’ll figure out what to get Denzel for his upcoming birthday onDecember 28th.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/182031585-denzelisthegreatest-7-courage-under-fire.mp3" length="68139419" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/182031585-denzelisthegreatest-7-courage-under-fire.mp3" fileSize="68139419" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/182031585-denzelisthegreatest-7-courage-under-fire.mp3" fileSize="68139419" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/180989249</guid>
       <title>6 The Book of Eli</title>
@@ -717,7 +850,9 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <description>This week W. Kamau Bell &amp; Kevin Avery discuss the 2010 post-apocalyptic film The Book of Eli. They’ll talk about why this movie hits Kamau’s cinematic G-Spot, Denzel doing a strut while trying on boots, quoting Bible verses before opening a can of whoop ass, and supporting Mila Kunis for a Book of Eli sequel.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/180989249-denzelisthegreatest-6-the-book-of-eli.mp3" length="51135182" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/180989249-denzelisthegreatest-6-the-book-of-eli.mp3" fileSize="51135182" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/180989249-denzelisthegreatest-6-the-book-of-eli.mp3" fileSize="51135182" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/179907283</guid>
       <title>5 The Bone Collector</title>
@@ -731,7 +866,9 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <description>This week W. Kamau Bell &amp; Kevin Avery discuss Denzel’s engaging performance in the 1999 thriller The Bone Collector. They’ll talk about how Denzel delivers a captivating performance from a bed in most of the movie, the Denzel stutter, Denzel tearing up as he gives orders, and Kevin’s personal history with The Bone Collector.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/179907283-denzelisthegreatest-5-the-bone-collector.mp3" length="49613497" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/179907283-denzelisthegreatest-5-the-bone-collector.mp3" fileSize="49613497" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/179907283-denzelisthegreatest-5-the-bone-collector.mp3" fileSize="49613497" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/178834173</guid>
       <title>4 Antwone Fisher</title>
@@ -745,7 +882,9 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <description>Happy Thanksgiving Denzealots!  This week W. Kamau Bell &amp; Kevin Avery discuss Denzel’s directorial debut Antwone Fisher. They’ll talk about Kamau's Denzel-deficiency during the film, Viola Davis busting out her "Glory" tear, and the scene that made them both cry like babies. Plus, Kamau &amp; Kevin chat about black superheroes, the Marvel announcement of the Black Panther movie, and Chadwick Boseman being the next Denzel.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/178834173-denzelisthegreatest-4-antwone-fisher.mp3" length="43063572" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/178834173-denzelisthegreatest-4-antwone-fisher.mp3" fileSize="43063572" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/178834173-denzelisthegreatest-4-antwone-fisher.mp3" fileSize="43063572" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/177786185</guid>
       <title>3 American Gangster</title>
@@ -759,7 +898,9 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <description>This week W. Kamau Bell &amp; Kevin Avery discuss the 2007 biographical crime thriller American Gangster. They’ll talk about Kevin being mistaken for gangstering a seat when he went to go see a screening of the movie, the amazing performances from the rappers in the movie, Ruby Dee slapping Denzel, rooting for Denzel’s portrayal of real drug kingpin Frank Lucas, what Kamau calls the “fast forward” scenes, Cuba Gooding Jr. playing a badass, and the most Denzelish scenes in the movie. Plus, Kamau &amp; Kevin break down the Denzel Thousand Yard Stare, rapper Froggy Fresh’s ode to Denzel, White people homework, and the Top 10 Black people homework movies of all time.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/177786185-denzelisthegreatest-3-american-gangster.mp3" length="70949572" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/177786185-denzelisthegreatest-3-american-gangster.mp3" fileSize="70949572" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/177786185-denzelisthegreatest-3-american-gangster.mp3" fileSize="70949572" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/176641133</guid>
       <title>2 A Soldier's Story</title>
@@ -773,7 +914,9 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <description>W. Kamau Bell &amp; Kevin Avery talk about a “Where Are They Now?” article on the cast of Remember the Titans before getting into the 1984 drama A Soldier’s Story. They’ll discuss why this falls into the category of black homework, white people double takes, how anything can be turned into a racial slur, and Denzel basically being the Hulk in the movie.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/176641133-denzelisthegreatest-2-a-soldiers-story.mp3" length="52611607" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/176641133-denzelisthegreatest-2-a-soldiers-story.mp3" fileSize="52611607" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/176641133-denzelisthegreatest-2-a-soldiers-story.mp3" fileSize="52611607" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/175227010</guid>
       <title>1 The Equalizer</title>
@@ -782,14 +925,18 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <itunes:duration>00:56:50</itunes:duration>
       <itunes:author>Wolfpop</itunes:author>
       <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>W. Kamau Bell &amp; Kevin Avery begin their journey through all of Denzel Washington’s films by discussing the 2014 action thriller The Equalizer. Listen as they talk about the old man action era of Denzel, Denzel's character as a "Home Depot" worker with a mysterious past, and watching the end of the movie from the hallway. Plus, they get into some Denzel News that involves a man who told cops he was Denzel after being arrested.
-</itunes:summary>
+      <itunes:summary>
+        W. Kamau Bell &amp; Kevin Avery begin their journey through all of Denzel Washington’s films by discussing the 2014 action thriller The Equalizer. Listen as they talk about the old man action era of Denzel, Denzel's character as a "Home Depot" worker with a mysterious past, and watching the end of the movie from the hallway. Plus, they get into some Denzel News that involves a man who told cops he was Denzel after being arrested.
+      </itunes:summary>
       <itunes:subtitle>W. Kamau Bell &amp; Kevin Avery begin their journey t…</itunes:subtitle>
-      <description>W. Kamau Bell &amp; Kevin Avery begin their journey through all of Denzel Washington’s films by discussing the 2014 action thriller The Equalizer. Listen as they talk about the old man action era of Denzel, Denzel's character as a "Home Depot" worker with a mysterious past, and watching the end of the movie from the hallway. Plus, they get into some Denzel News that involves a man who told cops he was Denzel after being arrested.
-</description>
+      <description>
+        W. Kamau Bell &amp; Kevin Avery begin their journey through all of Denzel Washington’s films by discussing the 2014 action thriller The Equalizer. Listen as they talk about the old man action era of Denzel, Denzel's character as a "Home Depot" worker with a mysterious past, and watching the end of the movie from the hallway. Plus, they get into some Denzel News that involves a man who told cops he was Denzel after being arrested.
+      </description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/175227010-denzelisthegreatest-the-equalizer.mp3" length="47651081" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/175227010-denzelisthegreatest-the-equalizer.mp3" fileSize="47651081" type="audio/mpeg" /></item>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/175227010-denzelisthegreatest-the-equalizer.mp3" fileSize="47651081" type="audio/mpeg" />
+    </item>
     <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/175216358</guid>
       <title>0 Getting Into The Denzelishness</title>
@@ -803,6 +950,11 @@ Pick up Denzel’s book here: http://www.amazon.com/Hand-Guide-Me-Denzel-Washing
       <description>Comedians W. Kamau Bell &amp; Kevin Avery are absolutely certain of one thing: Denzel Washington is the greatest actor of all time. On this episode they will talk about how Denzel has beaten the internet and break down their Top 5 Favorite Denzel Movies from the top of their head.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/175216358-denzelisthegreatest-0-getting-into-the-denzelishness.mp3" length="30568527" />
       <itunes:image href="http://i1.sndcdn.com/avatars-000112066839-19h05p-original.png" />
-    <author>hello@wolfpop.com (Wolfpop)</author><media:content url="http://feeds.soundcloud.com/stream/175216358-denzelisthegreatest-0-getting-into-the-denzelishness.mp3" fileSize="30568527" type="audio/mpeg" /></item>
-  <media:credit role="author">Wolfpop</media:credit><media:rating>adult</media:rating><media:description type="plain">Comedians W. Kamau Bell &amp; Kevin Avery are absolutely certain of one thing: Denzel Washington is the greatest actor of all time. And every week they will prove it as they talk Denzel with guests, share the latest “Denzel News” and review every Denzel movie</media:description></channel>
+      <author>hello@wolfpop.com (Wolfpop)</author>
+      <media:content url="http://feeds.soundcloud.com/stream/175216358-denzelisthegreatest-0-getting-into-the-denzelishness.mp3" fileSize="30568527" type="audio/mpeg" />
+    </item>
+    <media:credit role="author">Wolfpop</media:credit>
+    <media:rating>adult</media:rating>
+    <media:description type="plain">Comedians W. Kamau Bell &amp; Kevin Avery are absolutely certain of one thing: Denzel Washington is the greatest actor of all time. And every week they will prove it as they talk Denzel with guests, share the latest “Denzel News” and review every Denzel movie</media:description>
+  </channel>
 </rss>

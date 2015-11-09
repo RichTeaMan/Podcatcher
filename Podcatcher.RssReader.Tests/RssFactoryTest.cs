@@ -5,7 +5,7 @@ using System.IO;
 namespace Podcatcher.RssReader.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class RssFactoryTest
     {
         const string RESOURCE_NAME = "DenzelWashingtonIsTheGreatest.xml";
 
@@ -32,7 +32,7 @@ namespace Podcatcher.RssReader.Tests
         public void RssDeserialisation()
         {
             var rss = rssFactory.createFromString(RssStream);
-            Assert.AreEqual("Denzel Washington is the Greatest Actor of All Time Period", rss.channel.Items[0]);
+            Assert.AreEqual("Denzel Washington is the Greatest Actor of All Time Period", rss.channel.Title);
         }
     }
 }
