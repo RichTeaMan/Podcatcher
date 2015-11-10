@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Podcatcher.Search.Itunes.Tests
 {
@@ -40,6 +41,12 @@ namespace Podcatcher.Search.Itunes.Tests
             var response = factory.DeserialiseJsonResult(resultJson);
             Assert.AreEqual(5, response.resultCount);
             Assert.AreEqual("http://feeds.feedburner.com/JamesBonding", response.results[0].feedUrl);
+        }
+
+        [TestMethod]
+        public async Task WebItunesSearch()
+        {
+            await factory.Search("James Bonding");
         }
     }
 }
