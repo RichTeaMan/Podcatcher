@@ -20,6 +20,16 @@ namespace Podcatcher.Manager
 
         public int ChunkLength { get; set; } = 1024 * 512;
 
+        /// <summary>
+        /// Gets or sets expected content length.
+        /// 
+        /// This should be supplied the caller, it is not
+        /// found during web calls. This is value is not
+        /// used during download and the actual file may be
+        /// greater or less than this value.
+        /// </summary>
+        public int ContentLength { get; set; }
+
         public IChunkedDownloader ChunkDownloader { get; set; }
         public ChunkSaver ChunkSaver { get; set; }
 
@@ -74,6 +84,12 @@ namespace Podcatcher.Manager
         {
             var stream = await ChunkSaver.CreateCombinedStream(Destination);
             return stream;
+        }
+
+        public async Task<int> GetBytesSavedCount()
+        {
+            var count = await ChunkSaver.GetBytesSavedCount(Destination);
+            return count;
         }
     }
 }

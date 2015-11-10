@@ -47,6 +47,27 @@ namespace Podcatcher.Manager.Tests
         }
 
         [TestMethod]
+        public async Task CompleteDownloadProgress()
+        {
+            var bytes = File.ReadAllBytes(RESOURCE_NAME);
+            int length = 0;
+            downloader.ChunkSaved += (sender, chunk) =>
+            {
+                length += chunk.Length;
+                var bytesSaved = sender.GetBytesSavedCount().Result;
+                Assert.AreEqual(length, bytesSaved);
+            };
+            using (var ms = new MemoryStream(bytes))
+            {
+                downloader.ChunkDownloader = new FileChunkedDownloader() { FileStream = ms };
+                while (!downloader.Complete)
+                {
+                    await downloader.DownloadAndSaveChunk();
+                }
+            }
+        }
+
+        [TestMethod]
         public async Task CompleteDownloadFromFile()
         {
             var bytes = File.ReadAllBytes(RESOURCE_NAME);
@@ -65,7 +86,7 @@ namespace Podcatcher.Manager.Tests
             }
         }
 
-        [TestMethod]
+        //[TestMethod]
         public async Task CompleteDownloadFromWeb()
         {
             while (!downloader.Complete)

@@ -169,5 +169,24 @@ namespace Podcatcher.FileSaver
             }
         }
 
+        /// <summary>
+        /// Gets how many bytes have been saved.
+        /// </summary>
+        /// <param name="filepath"></param>
+        /// <returns></returns>
+        public async Task<int> GetBytesSavedCount(string filepath)
+        {
+            var chunkMap = await GetChunkMap(filepath);
+            long length = 0;
+            foreach(var chunk in chunkMap.Values)
+            {
+                using (var fs = await chunk.OpenAsync(FileAccess.Read))
+                {
+                    length += fs.Length;
+                }
+            }
+            return (int)length;
+        }
+
     }
 }
