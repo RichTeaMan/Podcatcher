@@ -38,12 +38,22 @@ namespace Podcatcher.Manager
         public FileDownload(string sourceLink, string destination)
         {
             SourceLink = sourceLink;
-            Destination = destination;
+            Destination = CleanFilename(destination);
+            
 
             ChunkDownloader = new HttpChunkedDownloader() { Url = sourceLink };
             ChunkSaver = new ChunkSaver();
 
             Complete = false;
+        }
+
+        private string CleanFilename(string filename)
+        {
+            foreach (var c in Path.GetInvalidFileNameChars())
+            {
+                filename = filename.Replace(c, '-');
+            }
+            return filename;
         }
 
         public async Task<IChunk> DownloadChunk()
