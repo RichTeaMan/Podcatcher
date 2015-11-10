@@ -88,7 +88,7 @@ namespace Podcatcher.CLI
 
             Console.WriteLine("Downloading {0} bytes from {1}.", cast.enclosure.length, cast.enclosure.url);
 
-            var downloader = new FileDownload(cast.enclosure.url, cast.title);
+            var downloader = new FileDownload(cast.enclosure.url, cast.title) { ContentLength = (int)cast.enclosure.length };
             downloader.ChunkSaved += Downloader_ChunkSaved;
             while(!downloader.Complete)
             {
@@ -101,7 +101,8 @@ namespace Podcatcher.CLI
 
         private static void Downloader_ChunkSaved(FileDownload sender, Podcatcher.Domain.IChunk chunk)
         {
-            Console.WriteLine("Downloaded {0} bytes.", chunk.Length);
+            int remaining = sender.ContentLength - sender.GetBytesSavedCount().Result;
+            Console.WriteLine("Downloaded {0} bytes. {1} remaining.", chunk.Length, remaining);
         }
     }
 }
