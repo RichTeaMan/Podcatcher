@@ -512,7 +512,7 @@ namespace Podcatcher.RssReader
 
             private string linkField;
 
-            private System.DateTime durationField;
+            private string durationField;
 
             private string authorField;
 
@@ -585,8 +585,8 @@ namespace Podcatcher.RssReader
             }
 
             /// <remarks/>
-            [XmlElement(Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd", DataType = "time")]
-            public System.DateTime duration
+            [XmlElement(Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")]
+            public string duration
             {
                 get
                 {

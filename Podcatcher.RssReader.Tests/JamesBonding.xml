@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:cc="http://web.resource.org/cc/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<channel>
+		<atom:link href="http://jamesbonding.libsyn.com/rss" rel="self" type="application/rss+xml"/>
+		<title>James Bonding</title>
+		<pubDate>Fri, 23 Oct 2015 23:15:54 +0000</pubDate>
+		<lastBuildDate>Fri, 23 Oct 2015 23:19:56 +0000</lastBuildDate>
+		<generator>Libsyn WebEngine 2.0</generator>
+		<link>http://jamesbonding.libsyn.com</link>
+		<language>en</language>
+		<copyright><![CDATA[2013 Nerdist Industries]]></copyright>
+		<docs>http://jamesbonding.libsyn.com</docs>
+		<itunes:summary><![CDATA[Matt and Matt. Bond over Bond.
+Matt Gourley and Matt Mira love James Bond so much they decided to make a podcast about it. Each episode they invite a guest to dive deep into one movie from the greatest film franchise known to man.]]></itunes:summary>
+		<image>
+			<url>http://static.libsyn.com/p/assets/c/9/a/d/c9ad5f3a501c4860/James-Bonding-Album-Art.jpg</url>
+			<title>James Bonding</title>
+			<link><![CDATA[http://jamesbonding.libsyn.com]]></link>
+		</image>
+		<itunes:author>Nerdist Industries</itunes:author>
+		<itunes:keywords>bond,gourley,james,matt,mira</itunes:keywords>
+	<itunes:category text="TV &amp; Film"/>
+	<itunes:category text="Comedy"/>
+		<itunes:image href="http://static.libsyn.com/p/assets/c/9/a/d/c9ad5f3a501c4860/James-Bonding-Album-Art.jpg" />
+		<itunes:explicit>yes</itunes:explicit>
+		<itunes:owner>
+			<itunes:name><![CDATA[Nerdist Industries]]></itunes:name>
+			<itunes:email>podcast@nerdist.com</itunes:email>
+		</itunes:owner>
+		<description><![CDATA[Matt and Matt. Bond over Bond.
+Matt Gourley and Matt Mira love James Bond so much they decided to make a podcast about it. Each episode they invite a guest to dive deep into one movie from the greatest film franchise known to man. ]]></description>
+		<itunes:subtitle><![CDATA[]]></itunes:subtitle>
+				<item>
+			<title>FOR YOUR EYES ONLY</title>
+			<pubDate>Fri, 23 Oct 2015 23:15:54 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[24a5ebbee26149ed6bce8575646ea7d8]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/for-your-eyes-only]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/f/c/0/f/fc0f9cd7c845630f/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Tom Lennon joins Matt and Matt to discuss FOR YOUR EYES ONLY!</p>]]></description>
+			<enclosure length="46255609" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB31_FOR_YOUR_EYES_ONLY.mp3" />
+			<itunes:duration>01:35:00</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Tom Lennon joins Matt and Matt to discuss FOR YOUR EYES ONLY!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 029: Octopussy</title>
+			<pubDate>Thu, 27 Aug 2015 07:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[3ceb8edd4c711789e8385c1eb721fbe6]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-029-octopussy]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/e/b/a/3/eba308e264c87390/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Mark McConville and James Bladon join the Matts to talk about how Octopussy works!</p>]]></description>
+			<enclosure length="57407178" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB29_Octopussy.mp3" />
+			<itunes:duration>01:58:14</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Mark McConville and James Bladon join the Matts to talk about how Octopussy works!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 028: Never Say Never Again with Aaron Abrams</title>
+			<pubDate>Fri, 12 Jun 2015 07:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[7ea79bbdb1eccf20b2de169efea319d9]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-028-never-say-never-again-with-aaron-abrams]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/5/2/2/4/5224179f87184662/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Aaron Abrams joins the Matts to discuss <em>Never Say Never Again</em>!</p>]]></description>
+			<enclosure length="42118439" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB28_NEVER_SAY_NEVER_AGAIN_with_Aaron_Abrams.mp3" />
+			<itunes:duration>01:26:23</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Aaron Abrams joins the Matts to discuss Never Say Never Again!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 027: Moonraker with Doug Benson</title>
+			<pubDate>Tue, 31 Mar 2015 19:15:45 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[5a344a6e2106f16801131f1569b86899]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-027-moonraker-with-doug-benson]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/d/3/6/d/d36d1d807e1840b0/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>The Matts are back to discuss Moonraker with special guest Doug Benson!</p>]]></description>
+			<enclosure length="48217300" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB027_Moonraker_with_Doug_Benson.mp3" />
+			<itunes:duration>01:39:05</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[The Matts are back to discuss Moonraker with special guest Doug Benson!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 026: A View To A Kill LIVE with How Did This Get Made</title>
+			<pubDate>Fri, 12 Dec 2014 19:42:11 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[d2a531cbf34cdac6a0b6730116b0f0c5]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-026-a-view-to-kill-live-with-how-did-this-get-made]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/b/f/f/8/bff8a0ff3e01a85c/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>In a very special podcast cross-over event, Bond experts Matt Gourley and Matt Mira join Paul, June, and Jason of How Did This Get Made? to figure out if A View To a Kill is the worst Bond movie of all time. Recorded LIVE at Largo in Los Angeles, they cover how Bond invents snowboarding, the most French man in the world, Tanya Roberts’ stunt double being a grizzly old man, the multiple blimps, race horses, the robot dog, and of course, the butterflies. Plus, Gourley & June's wigdar shines during audience Q&A and we hear from the person who reviews A View To a Kill every year in another edition of 2nd Opinions!</p>]]></description>
+			<enclosure length="55493134" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB26_A_View_To_Kill_LIVE_with_How_Did_This_Get_Made.mp3" />
+			<itunes:duration>01:54:14</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[In a very special podcast cross-over event, Bond experts Matt Gourley and Matt Mira join Paul, June, and Jason of How Did This Get Made? to figure out if A View To a Kill is the worst Bond movie of all time. Recorded LIVE at Largo in Los Angeles, they...]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 025- Mission Briefing SPECTRE</title>
+			<pubDate>Fri, 05 Dec 2014 07:26:58 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[a25e2e9bf0d3279815f1b015ddc1c280]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/mission-briefing-spectre]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/c/e/c/0/cec0134e7027c679/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Matt and Matt saw the Bond Signal in the sky and answered it. They break down EVERYTHING about the James Bond 24 press Conference. Even which side of the stage people are standing on!</p>]]></description>
+			<enclosure length="33213819" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB25_Mission_Briefing_SPECTRE.mp3" />
+			<itunes:duration>01:07:49</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Matt and Matt saw the Bond Signal in the sky and answered it. They break down EVERYTHING about the James Bond 24 press Conference. Even which side of the stage people are standing on!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 024: The Spy Who Loved Me with Dana Gould</title>
+			<pubDate>Thu, 04 Dec 2014 16:49:15 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[da38ac80b3b235e6d8d0243b61d4fbdb]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-024-the-spy-who-loved-me-with-dana-gould]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/8/6/c/7/86c73e9acb37210b/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>The Matts are joined by the hilarious Dana Gould to talk about <em>The Spy Who Loved Me</em>!</p>]]></description>
+			<enclosure length="56979606" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB24_The_Spy_Who_Loved_Me.mp3" />
+			<itunes:duration>01:57:20</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[The Matts are joined by the hilarious Dana Gould to talk about The Spy Who Loved Me!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 023: The Living Daylights with Cole Stratton</title>
+			<pubDate>Thu, 23 Oct 2014 07:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[f74d9052035833f91e1a02eabe598f15]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-023-the-living-daylights-with-cole-stratton]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/9/8/b/e/98beb6d9948104a4/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Cole Stratton (Pop My Culture!) joins the Matts to talk about Timothy Dalton in <em>The Living Daylights</em>!</p>
+<p> </p>]]></description>
+			<enclosure length="44995462" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB23_The_Living_Daylights_with_Cole_Stratton.mp3" />
+			<itunes:duration>01:32:22</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Cole Stratton (Pop My Culture!) joins the Matts to talk about Timothy Dalton in The Living Daylights!
+ ]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 022: Best and Worst of Bond Live</title>
+			<pubDate>Thu, 02 Oct 2014 08:11:55 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[2d7e59eb5b6b51af5633fa5b23975b58]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/best-and-worst-of-bond-live]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/7/1/b/6/71b65dc05ffb8654/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>It's James Bonding LIVE from LA Podfest! <a href="http://lmblog.adamcarolla.com/">Larry Miller</a> and <a href="https://twitter.com/nickwiger">Nick Wiger</a> join the Matts to go over the best and the worst of the James Bond movies!</p>]]></description>
+			<enclosure length="42538698" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB22_Best_and_Worst_of_Bond_Live.mp3" />
+			<itunes:duration>01:27:15</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[It's James Bonding LIVE from LA Podfest! Larry Miller and Nick Wiger join the Matts to go over the best and the worst of the James Bond movies!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 021: The Man with the Golden Gun with Greg Proops and Jeff Davis</title>
+			<pubDate>Thu, 17 Jul 2014 07:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[f162f2f68c8a7a31fa9538a03ffb6cc2]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-021-the-man-with-the-golden-guy-with-greg-proops-and-jeff-davis]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/5/b/5/4/5b543a2e99ce479c/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>The Matts are back with special guests Greg Proops and Jeff Davis to discuss THE MAN WITH THE GOLDEN GUN!</p>]]></description>
+			<enclosure length="54947703" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB21_Man_with_Golden_Guy.mp3" />
+			<itunes:duration>01:53:06</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[The Matts are back with special guests Greg Proops and Jeff Davis to discuss THE MAN WITH THE GOLDEN GUN!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 020: Mission Briefing #3</title>
+			<pubDate>Thu, 26 Jun 2014 07:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[fd52b2cd288c8b7f18752b6ef134c1f8]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-020-mission-briefing-3]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/2/4/5/f/245fb368a7be700c/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p><span style="color: #3c3c3c; font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 20px;">A special mission briefing about James Bonding from the Matts.</span></p>]]></description>
+			<enclosure length="41060407" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/bonding20_briefing3.mp3" />
+			<itunes:duration>01:24:10</itunes:duration>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[A special mission briefing about James Bonding from the Matts.]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 019: License to Kill with Amanda Lund and Maria Blasucci</title>
+			<pubDate>Thu, 01 May 2014 07:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[843979c841dbcda6c443575fa7646272]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-019-license-to-kill-with-amanda-lund-and-maria-blasucci]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/2/3/4/0/23406a48d7975e4d/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Amanda Lund and Maria Blasucci return to discuss License to Kill with the Matts!</p>]]></description>
+			<enclosure length="56254035" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB19_License_to_Kill_with_Amanda_Lund_and_Maria_Blasucci.mp3" />
+			<itunes:duration>01:55:49</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Amanda Lund and Maria Blasucci return to discuss License to Kill with the Matts!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 018: James WonderConing</title>
+			<pubDate>Fri, 25 Apr 2014 15:32:46 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[9d4d99ecbf487e1120dbd07db1b01477]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/james-wonderconing]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/f/a/2/4/fa24e5d81a03279a/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>It's a live James Bonding from WonderCon with guests Jordan Morris, Ali Ward and Georgia Hardstark!</p>]]></description>
+			<enclosure length="29813939" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB18_James_WonderConing.mp3" />
+			<itunes:duration>01:00:44</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[It's a live James Bonding from WonderCon with guests Jordan Morris, Ali Ward and Georgia Hardstark!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 017: Misson Briefing #2</title>
+			<pubDate>Fri, 07 Mar 2014 00:34:40 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[53453851868439f55686ab2e4dab7961]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/misson-briefing-2]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/b/7/e/8/b7e81c28f495c9ad/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Craig Rowin joins the Matts for another Mission Briefing!</p>]]></description>
+			<enclosure length="40383079" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB17_Mission_Briefing.mp3" />
+			<itunes:duration>01:22:46</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Craig Rowin joins the Matts for another Mission Briefing!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 016: Live and Let Die with Paul F. Tompkins</title>
+			<pubDate>Thu, 06 Feb 2014 08:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[8bd23dd03415b4d95aff298fafb2142a]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-016-live-and-let-die-with-paul-f-tompkins]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/e/8/d/3/e8d33b2d1851dda6/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Paul F. Tompkins returns to James Bonding to discuss <em>Live And Let Die</em>!</p>]]></description>
+			<enclosure length="63125702" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB16_Live_and_Let_Die_with_Paul_F._Tompkins.mp3" />
+			<itunes:duration>02:10:08</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Paul F. Tompkins returns to James Bonding to discuss Live And Let Die!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 015: GoldenEye with Craig Rowin</title>
+			<pubDate>Thu, 23 Jan 2014 22:18:09 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[fe209176c44203aece4a63bbbf9b25c9]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-015-golden-eye-with-craig-rowin]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/a/a/b/b/aabb8c7f7b18ac91/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Craig Rowin joins the Matts to finish out the Pierce Brosnan movies with GoldenEye!</p>]]></description>
+			<enclosure length="69881600" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB15_Goldeneye.mp3" />
+			<itunes:duration>01:50:11</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Craig Rowin joins the Matts to finish out the Pierce Brosnan movies with GoldenEye!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 014: Diamonds Are Forever with Doug Benson</title>
+			<pubDate>Thu, 19 Dec 2013 08:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[e32b91ee495b8bdae921d10f0b746708]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-014-diamonds-are-forever-with-doug-benson]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/8/5/4/8/8548b70f382bf7cd/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>The Matts are joined by Doug Benson to discuss Diamonds Are Forever!</p>]]></description>
+			<enclosure length="63677750" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB14_Diamonds_Are_Forever_with_Doug_Benson.mp3" />
+			<itunes:duration>01:42:37</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[The Matts are joined by Doug Benson to discuss Diamonds Are Forever!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 013: Tomorrow Never Dies with Jordan Morris</title>
+			<pubDate>Thu, 12 Dec 2013 23:46:14 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[c503e2b5a23565c2ac649eee05b06f4d]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-013-tomorrow-never-dies-with-jordan-morris]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/6/6/4/6/6646a5071ea432bf/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Special guest Jordan Morris joins the controversy between the Matts about <em>Tomorrow Never dies</em>!</p>]]></description>
+			<enclosure length="77014109" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB13_Tomorrow_Never_Dies_with_Jordan_Morris.mp3" />
+			<itunes:duration>02:06:24</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Special guest Jordan Morris joins the controversy between the Matts about Tomorrow Never dies!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 012: On Her Majesty's Secret Service with Paul Scheer</title>
+			<pubDate>Thu, 05 Dec 2013 08:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[b59e23d3aff70e9eabe7266368d710d5]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-012-on-her-majesty-s-secret-service-with-paul-scheer]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/e/d/a/2/eda231372ba5347f/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Paul Scheer joins the Matts to talk about ON HER MAJESTY'S SECRET SERVICE! Also, he went to a James Bond premiere.</p>]]></description>
+			<enclosure length="67665825" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB12_ON_HER_MAJESTYS_SECRET_SERVICE_with_Paul_Scheer.mp3" />
+			<itunes:duration>01:48:02</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Paul Scheer joins the Matts to talk about ON HER MAJESTY'S SECRET SERVICE! Also, he went to a James Bond premiere.]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 011: Mission Briefing</title>
+			<pubDate>Thu, 21 Nov 2013 08:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[6759e73bb7dfa91e86673c72e4fc94a6]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-011-mission-briefing]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/5/8/1/8/5818d867160f9954/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>A special mission briefing about James Bonding from the Matts.</p>]]></description>
+			<enclosure length="45755799" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB11_Mission_Briefing.mp3" />
+			<itunes:duration>01:14:40</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[A special mission briefing about James Bonding from the Matts.]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 010: The World Is Not Enough with Derek Miller and Jeremy Smith</title>
+			<pubDate>Thu, 07 Nov 2013 16:30:50 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[d83538fe7e478052ed8bd6cacc47e544]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-010-the-world-is-not-enough-with-derek-miller-and-jeremy-smith]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/4/e/f/e/4efeb9e9bbd3850e/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>The Matts are joined by Derek Miller and Jeremy Smith to talk about The World Is Not Enough!</p>]]></description>
+			<enclosure length="47756715" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB10_The_World_Is_Not_Enough.mp3" />
+			<itunes:duration>01:38:07</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[The Matts are joined by Derek Miller and Jeremy Smith to talk about The World Is Not Enough!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 009: You Only Live Twice with Vanessa Ramos</title>
+			<pubDate>Thu, 31 Oct 2013 08:27:15 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[9be3cd62d81ccf68a4be22ab4ecf5280]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-009-you-only-live-twice-with-vanessa-ramos]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/f/b/f/2/fbf231c0ec7bc9d7/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>The Matts welcome Vanessa Ramos to the show to talk about You Only Live Twice!</p>]]></description>
+			<enclosure length="48931597" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB9_Only_Live_Twice.mp3" />
+			<itunes:duration>01:40:34</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[The Matts welcome Vanessa Ramos to the show to talk about You Only Live Twice!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 008: Die Another Day with Ben Blacker and Ben Acker</title>
+			<pubDate>Thu, 24 Oct 2013 07:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[18a2fb5b04859785151bf9edfd555456]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-008-die-another-day-with-ben-blacker-and-ben-acker]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/5/4/a/b/54ab5a368d33d4d9/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>The Bens join the Matts to talk about what they may or may not like about Die Another Day!</p>]]></description>
+			<enclosure length="49005576" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB008_Die_Another_Day_with_Ben_Blacker_and_Ben_Acker.mp3" />
+			<itunes:duration>01:40:43</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[The Bens join the Matts to talk about what they may or may not like about Die Another Day!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 007: Thunderball with Scott Mosier</title>
+			<pubDate>Thu, 17 Oct 2013 07:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[9c155088ea2909efd8b6813d2f1e0c79]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/thunderball-with-scott-mosier]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/5/8/d/e/58de977c7a9c7ce6/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Scott Mosier sits down with the Matts to discuss and dissect Thunderball!</p>]]></description>
+			<enclosure length="47211277" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB7_Thunderball.mp3" />
+			<itunes:duration>01:36:59</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Scott Mosier sits down with the Matts to discuss and dissect Thunderball!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 006: Casino Royale with Amanda Lund and Maria Blasucci</title>
+			<pubDate>Thu, 10 Oct 2013 07:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[1d4d697f91fdb40d073fe00c4152a850]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-006-casino-royale-with-amanda-lund-and-maria-blasucci]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/a/2/6/f/a26fbfb6ca4eb049/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Amanda Lund and Maria Blasucci join the Matts to talk about the sexiness that is James Bond and Casino Royale!</p>]]></description>
+			<enclosure length="67573624" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB6_Casino_Royale.mp3" />
+			<itunes:duration>02:19:24</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Amanda Lund and Maria Blasucci join the Matts to talk about the sexiness that is James Bond and Casino Royale!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 005: Goldfinger with Alie and Georgia</title>
+			<pubDate>Thu, 03 Oct 2013 07:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[edd12aa744e4f75fba67f03145071eb4]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-005-goldfinger-with-alie-and-georgia]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/3/8/1/9/3819873aa8403787/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Alie and Georgia comes on the podcast to talk about the controversy they found in <em>Goldfinger</em>!</p>]]></description>
+			<enclosure length="44103751" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB5_Goldfinger.mp3" />
+			<itunes:duration>01:30:31</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Alie and Georgia comes on the podcast to talk about the controversy they found in Goldfinger!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 004: Quantum of Solace with Emily Gordon</title>
+			<pubDate>Thu, 26 Sep 2013 20:46:11 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[94f2d9db4cc5fca1f4888f5d218f7d0b]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-004-quantum-of-solace-with-emily-gordon]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/2/4/4/0/2440b408f27d07bd/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Emily Gordon joins the Matt's to discuss Quantum of Solace!</p>
+<p><em></em></p>]]></description>
+			<enclosure length="46719339" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB4_Quantum_of_Solace_with_Emily_Gordon.mp3" />
+			<itunes:duration>01:35:58</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Emily Gordon joins the Matt's to discuss Quantum of Solace!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 003: From Russia With Love with Jonah Ray</title>
+			<pubDate>Thu, 19 Sep 2013 07:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[187c2214ebc7fc9fdcc1b452fdf9375b]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-003-from-russia-with-love-with-jonah-ray]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/a/9/b/1/a9b14e31cb4bc44b/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Jonah Ray joins the Matts to talk about their love of Russia with Love!</p>]]></description>
+			<enclosure length="40933530" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB3_From_Russia_With_Love_with_Jonah_Ray.mp3" />
+			<itunes:duration>01:23:54</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Jonah Ray joins the Matts to talk about their love of Russia with Love!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 002: Skyfall with Steve Agee</title>
+			<pubDate>Thu, 12 Sep 2013 07:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[f2ebd73c89c24c467c0de8285b1f10b0]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-002-skyfall-with-steve-agee]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/4/e/7/2/4e729730bac529b9/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Matt and Matt invite Steve Agee to discuss how the sky falls!</p>]]></description>
+			<enclosure length="52544855" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB2_Skyfall.mp3" />
+			<itunes:duration>01:48:06</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Matt and Matt invite Steve Agee to discuss how the sky falls!]]></itunes:subtitle>
+					</item>
+		<item>
+			<title>Episode 001: Dr. No With Paul F. Tompkins</title>
+			<pubDate>Thu, 05 Sep 2013 04:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[5bae4346c198e47e3c64c0e6133cad81]]></guid>
+			<link><![CDATA[http://jamesbonding.libsyn.com/episode-001-dr-no-with-paul-f-tompkins]]></link>
+			<itunes:image href="http://static.libsyn.com/p/assets/3/5/2/8/3528e647d47d06c3/James-Bonding-Album-Art.jpg" />
+			<description><![CDATA[<p>Matt and Matt invite comedian Paul F Tompkins to the show to break down the 1962 classic.</p>]]></description>
+			<enclosure length="39502856" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB1_Dr_No.mp3" />
+			<itunes:duration>01:20:56</itunes:duration>
+			<itunes:explicit>yes</itunes:explicit>
+			<itunes:keywords />
+			<itunes:subtitle><![CDATA[Matt and Matt invite comedian Paul F Tompkins to the show to break down the 1962 classic.]]></itunes:subtitle>
+					</item>
+    <item>
+      <title>Episode 000: Do You Expect Me To Talk?</title>
+      <pubDate>Thu, 05 Sep 2013 04:00:00 +0000</pubDate>
+      <guid isPermaLink="false"><![CDATA[356773de3bd0e3447de3fac76be78a1b]]></guid>
+      <link><![CDATA[http://jamesbonding.libsyn.com/episode-0-do-you-expect-me-to-talk]]></link>
+      <itunes:image href="http://static.libsyn.com/p/assets/2/7/d/e/27def370741f95c1/James-Bonding-Album-Art.jpg" />
+      <description><![CDATA[<p>Hear the origin story of the Podcast.  They guys also break down what to expect from the podcast.</p>]]></description>
+      <enclosure length="21360919" type="audio/mpeg" url="http://traffic.libsyn.com/jamesbonding/JB0_Episode_0.mp3" />
+      <itunes:duration>43:08</itunes:duration>
+      <itunes:explicit>yes</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle><![CDATA[Hear the origin story of the Podcast.  They guys also break down what to expect from the podcast.]]></itunes:subtitle>
+    </item>
+	</channel>
+</rss>

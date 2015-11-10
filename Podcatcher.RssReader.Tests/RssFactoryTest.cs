@@ -11,30 +11,42 @@ namespace Podcatcher.RssReader.Tests
         const string RESOURCE_NAME = "DenzelWashingtonIsTheGreatest.xml";
         const string RESOURCE_LINK = "http://feeds.feedburner.com/DenzelWashingtonIsTheGreatest?format=xml";
 
-        private Stream RssStream;
+        const string RESOURCE_NAME2 = "JamesBonding.xml";
+
+
+        private Stream RssStream1;
+        private Stream RssStream2;
         private RssFactory rssFactory;
 
         [TestInitialize]
         public void Initialise()
         {
-            RssStream = File.Open(RESOURCE_NAME, FileMode.Open);
+            RssStream1 = File.Open(RESOURCE_NAME, FileMode.Open);
+            RssStream2 = File.Open(RESOURCE_NAME2, FileMode.Open);
             rssFactory = new RssFactory();
         }
 
         [TestCleanup]
         public void Cleanup()
         {
-            if (RssStream != null)
+            if (RssStream1 != null)
             {
-                RssStream.Close();
+                RssStream1.Close();
+            }
+            if (RssStream2 != null)
+            {
+                RssStream2.Close();
             }
         }
 
         [TestMethod]
         public void RssDeserialisation()
         {
-            var rss = rssFactory.CreateFromStream(RssStream);
-            Assert.AreEqual("Denzel Washington is the Greatest Actor of All Time Period", rss.channel.Title);
+            var rss1 = rssFactory.CreateFromStream(RssStream1);
+            Assert.AreEqual("Denzel Washington is the Greatest Actor of All Time Period", rss1.channel.Title);
+            
+            var rss2 = rssFactory.CreateFromStream(RssStream2);
+            Assert.AreEqual("James Bonding", rss2.channel.Title);
         }
 
         [TestMethod]
