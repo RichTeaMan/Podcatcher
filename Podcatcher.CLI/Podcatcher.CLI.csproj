@@ -92,6 +92,10 @@
       <Project>{606fc136-6ce7-40aa-b3bc-2f2e7b09bbed}</Project>
       <Name>Podcatcher.RssReader</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Podcatcher.Search.Itunes\Podcatcher.Search.Itunes.csproj">
+      <Project>{5f2a8660-0d4a-4ce1-af83-3c7c5984d8c4}</Project>
+      <Name>Podcatcher.Search.Itunes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />

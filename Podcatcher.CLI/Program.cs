@@ -1,6 +1,7 @@
 ﻿using CommandLineParser;
 using Podcatcher.Manager;
 using Podcatcher.RssReader;
+using Podcatcher.Search.Itunes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -103,6 +104,24 @@ namespace Podcatcher.CLI
         {
             int remaining = sender.ContentLength - sender.GetBytesSavedCount().Result;
             Console.WriteLine("Downloaded {0} bytes. {1} remaining.", chunk.Length, remaining);
+        }
+
+        [ClCommand("search")]
+        public static void Search(
+            [ClArgs("term", "t")]
+            string term)
+        {
+            var searchFactory = new ItunesSearchFactory();
+            var result = searchFactory.Search(term).Result;
+
+            Console.WriteLine("{0} results found:", result.resultCount);
+            foreach(var r in result.results)
+            {
+                Console.WriteLine("Name: {0} Artist: {1} Casts: {2}",
+                    r.collectionName,
+                    r.collectionArtistName,
+                    r.trackCount);
+            }
         }
     }
 }
