@@ -60,7 +60,7 @@ namespace Podcatcher.Manager
         public async Task DownloadAndSaveChunk()
         {
             var chunk = await DownloadChunk();
-            if (chunk.Start > 0 && chunk.Length == 0)
+            if (chunk == null)
             {
                 Complete = true;
             }

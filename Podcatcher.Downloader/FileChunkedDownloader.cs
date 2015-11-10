@@ -41,13 +41,18 @@ namespace Podcatcher.Downloader
             return data;
         }
 
-        public async Task<IChunk> DownloadChunk(IChunkInfo chunkData)
+        public async Task<IChunk> DownloadChunk(IChunkInfo chunkInfo)
         {
-            FileStream.Position = chunkData.Start;
-            var data = await ReadBytes(FileStream, chunkData.Length);
+            if (chunkInfo.Start >= FileStream.Length)
+            {
+                return null;
+            }
+
+            FileStream.Position = chunkInfo.Start;
+            var data = await ReadBytes(FileStream, chunkInfo.Length);
 
             var chunk = new Chunk(
-                chunkData.Start,
+                chunkInfo.Start,
                 data);
             return chunk;
         }

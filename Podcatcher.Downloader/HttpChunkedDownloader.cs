@@ -17,7 +17,7 @@ namespace Podcatcher.Downloader
         {
         }
 
-        public async Task<IChunk> DownloadChunk(IChunkInfo chunkData)
+        public async Task<IChunk> DownloadChunk(IChunkInfo chunkInfo)
         {
             if(string.IsNullOrEmpty(Url))
             {
@@ -29,8 +29,8 @@ namespace Podcatcher.Downloader
                 Url))
             {
                 message.Headers.Range = new RangeHeaderValue(
-                    chunkData.Start,
-                    chunkData.Start + (chunkData.Length - 1)
+                    chunkInfo.Start,
+                    chunkInfo.Start + (chunkInfo.Length - 1)
                 );
 
                 using (var wc = new HttpClient())
@@ -41,7 +41,7 @@ namespace Podcatcher.Downloader
                         case System.Net.HttpStatusCode.PartialContent:
                             {
                                 var content = await response.Content.ReadAsByteArrayAsync();
-                                int start = chunkData.Start;
+                                int start = chunkInfo.Start;
                                 int length = content.Length;
                                 var chunk = new Chunk(start, content);
                                 return chunk;
