@@ -11,9 +11,9 @@ namespace Podcatcher.Manager
 {
     public class FileDownload
     {
-        public delegate void ChunkSavededEventHandler(FileDownload sender, IChunk chunk);
+        public delegate void ChunkSavedEventHandler(FileDownload sender, IChunk chunk);
 
-        public event ChunkSavededEventHandler ChunkSaved;
+        public event ChunkSavedEventHandler ChunkSaved;
 
         public string SourceLink { get; private set; }
         public string Destination { get; private set; }
