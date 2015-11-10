@@ -1,0 +1,1 @@
+<Playlist Version="1.0"><Add Test="Podcatcher.RssReader.Tests.RssFactoryTest.WebRssDeserialisation" /><Add Test="Podcatcher.Downloader.Tests.HttpChunkedDownloaderTest.ResourceAvailable" /><Add Test="Podcatcher.Downloader.Tests.HttpChunkedDownloaderTest.Download" /><Add Test="Podcatcher.Downloader.Tests.HttpChunkedDownloaderTest.DownloadNearEnd" /></Playlist>
