@@ -22,7 +22,7 @@ namespace Podcatcher.FileSaver.Tests
             resourceStream = new MemoryStream(bytes);
         }
 
-        private async Task DeleteDirectory()
+        private async Task CleanupDirectory()
         {
             var fileExists = await FileSystem.Current.LocalStorage.CheckExistsAsync(TEST_OUTPUT);
             if (fileExists == ExistenceCheckResult.FileExists)
@@ -40,13 +40,13 @@ namespace Podcatcher.FileSaver.Tests
         {
             ChunkSaver = new ChunkSaver();
             CreateResource();
-            await DeleteDirectory();
+            await CleanupDirectory();
         }
 
         [TestCleanup]
         public async void Cleanup()
         {
-            await DeleteDirectory();
+            await CleanupDirectory();
         }
 
         [TestMethod]
@@ -135,7 +135,6 @@ namespace Podcatcher.FileSaver.Tests
             Assert.AreEqual(int.MaxValue, fourthChunk.Length, "Fourth chunk length.");
         }
 
-
         [TestMethod]
         public async Task SaveFile()
         {
@@ -153,5 +152,14 @@ namespace Podcatcher.FileSaver.Tests
             CollectionAssert.AreEqual(resourceData, comData);
         }
 
+        [TestMethod]
+        public async Task DeleteDirectory()
+        {
+            await SaveFile();
+            await ChunkSaver.DeleteChunks(TEST_OUTPUT);
+
+            var exists = await FileSystem.Current.LocalStorage.CheckExistsAsync(TEST_OUTPUT + ".parts");
+            Assert.AreEqual(ExistenceCheckResult.NotFound, exists);
+        }
     }
 }

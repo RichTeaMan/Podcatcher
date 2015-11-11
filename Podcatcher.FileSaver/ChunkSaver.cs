@@ -59,6 +59,12 @@ namespace Podcatcher.FileSaver
             return comStream;
         }
 
+        public async Task DeleteChunks(string filepath)
+        {
+            var folder = await CreateFolder(filepath);
+            await folder.DeleteAsync();
+        }
+
         public async Task<Stream> CreateCombinedStream(string filepath)
         {
             var comFile = await FileSystem.Current.LocalStorage.CreateFileAsync(filepath, CreationCollisionOption.ReplaceExisting);
