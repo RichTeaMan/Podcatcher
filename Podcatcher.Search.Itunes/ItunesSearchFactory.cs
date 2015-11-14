@@ -14,7 +14,7 @@ namespace Podcatcher.Search.Itunes
         public string GetSearchUrl(string terms)
         {
             string cleanTerms = terms.Trim().Replace(' ', '+');
-            string url = string.Format("http://itunes.apple.com/search?term={0}&kind=podcast", cleanTerms);
+            string url = string.Format("http://itunes.apple.com/search?term={0}&entity=podcast", cleanTerms);
             return url;
         }
 
