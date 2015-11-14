@@ -28,10 +28,10 @@ namespace Podcatcher.Search.Itunes
         public string artworkUrl100 { get; set; }
         public float collectionPrice { get; set; }
         public float trackPrice { get; set; }
-        public int trackRentalPrice { get; set; }
-        public int collectionHdPrice { get; set; }
-        public int trackHdPrice { get; set; }
-        public int trackHdRentalPrice { get; set; }
+        public float trackRentalPrice { get; set; }
+        public float collectionHdPrice { get; set; }
+        public float trackHdPrice { get; set; }
+        public float trackHdRentalPrice { get; set; }
         public DateTime releaseDate { get; set; }
         public string collectionExplicitness { get; set; }
         public string trackExplicitness { get; set; }

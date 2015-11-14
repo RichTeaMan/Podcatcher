@@ -9,38 +9,42 @@ namespace Podcatcher.Search.Itunes.Tests
     [TestClass]
     public class ITunesSearchTest
     {
-        const string RESOURCE_NAME = "itunesJamesBondingResult.json";
+        const string RESOURCE_NAME1 = "itunesJamesBondingResult.json";
+        const string RESOURCE_NAME2 = "itunesDenzelWashingtonResult.json";
 
-        private Stream resultStream;
-        private string resultJson;
         private ItunesSearchFactory factory;
+
+        private string GetFileContents(string filename)
+        {
+            using (var resultStream = File.Open(filename, FileMode.Open))
+            using (var reader = new StreamReader(resultStream, Encoding.UTF8))
+            {
+                var resultJson = reader.ReadToEnd();
+                return resultJson;
+            }
+        }
 
         [TestInitialize]
         public void Initialise()
         {
-            resultStream = File.Open(RESOURCE_NAME, FileMode.Open);
-            using (var reader = new StreamReader(resultStream, Encoding.UTF8))
-            {
-                resultJson = reader.ReadToEnd();
-            }
+            
             factory = new ItunesSearchFactory();
         }
 
-        [TestCleanup]
-        public void Cleanup()
-        {
-            if (resultStream != null)
-            {
-                resultStream.Close();
-            }
-        }
-
         [TestMethod]
-        public void ItunesResultDeserialisation()
+        public void ItunesResult1Deserialisation()
         {
+            var resultJson = GetFileContents(RESOURCE_NAME1);
             var response = factory.DeserialiseJsonResult(resultJson);
             Assert.AreEqual(5, response.resultCount);
             Assert.AreEqual("http://feeds.feedburner.com/JamesBonding", response.results[0].feedUrl);
+        }
+
+        [TestMethod]
+        public void ItunesResult2Deserialisation()
+        {
+            var resultJson = GetFileContents(RESOURCE_NAME2);
+            var response = factory.DeserialiseJsonResult(resultJson);
         }
 
         [TestMethod]
